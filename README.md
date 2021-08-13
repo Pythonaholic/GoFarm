@@ -1,29 +1,57 @@
-# Next.js + Tailwind CSS Example
+# GoFarm
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Team members
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+1. Abdalrahman Samara (team leader).
 
-## Preview
+2. Ahmed Zatar.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+3. Hamza Qahoush.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+4. Obada Jaber.
 
-## Deploy your own
+5. Doa'a Obeidat.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Description
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+A website that let the users search for farms all over Jordan and if the users wants to register a farm, he can provide us with the farm's specific details and we will publish it in our website.
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Wireframes
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+[WireFrames](https://www.figma.com/file/2J1jSdIXGaVIw5tYdZQks3/Untitled?node-id=0%3A1)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## User Stories
+
+1. As a user, I want to singup in the web app, and have my own account.
+
+2. As a user,  I want to see beautiful graphics.
+
+3. As an admin, I want to have access to all API data.
+
+4. As a user, I want to add my farm, and see it in the farm search.
+
+5. As a user, I want to share my experience for any farm.
+
+## Software Requirements
+
+[Software Requirements Document](./requirements.md)
+
+## Domain Modeling
+
+when the user enters the web page, he starts by logging into our website with the username and password. this will generate an access token for the user, this will git the user's data from the first table (Users table), and will grant him the ability to add his own farms in the (My Farms table), and at last, it will give him the ability to check the available farms inside the (All Farms) table.
+
+![Domain Modeling](/assets/DM.png)
+
+the image above shows the flow of the backend side
+
+for the front end, if the user is not signed in, he will have access to the home page, and the search page, to search for farms, but the non-registered user can't add his own farm, if the user is signed in, he will be able to access the form to add his own farm.
+
+## Database Schema Diagram
+
+![0](/assets/Capture.PNG)
+
+
+
+
