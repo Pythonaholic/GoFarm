@@ -2,16 +2,18 @@ import Head from 'next/head';
 import { SettingsContext } from '../context/auth';
 import React, { useContext } from 'react';
 import { useState } from 'react';
+import SettingsProvider from '../context/auth.js'
+
 
 export default function Home() {
-  console.log('halllllllllll');
+  
   const context = useContext(SettingsContext);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  console.log('Samaraaaaaaaa');
   function submitHandler(event) {
     event.preventDefault();
-    console.log(username, password);
+    console.log('hello')
+    // console.log(username, password);
     context.login(username, password);
   }
 
@@ -27,14 +29,19 @@ export default function Home() {
     console.log('password', event.target.value);
     setPassword(event.target.value);
   }
+ 
   if (context.loggedIn) {
     return (
+      
       <form onSubmit={context.logout}>
         <button> logout</button>
       </form>
+     
+      
     );
   }
   return (
+    
     <div>
       <form
         className="flex flex-col w-1/2 gap-4 p-8 mx-auto my-4 text-center bg-gray-200 border-2 border-gray-400 rounded-lg text-md"
@@ -82,5 +89,10 @@ export default function Home() {
         </button>
       </form>
     </div>
+    
+
+    
+    
   );
+
 }
