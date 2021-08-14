@@ -332,9 +332,9 @@ p {
     line-height: 1.5;
 }
 
-.footer-links ul a:hover { color: #D67118; }
+.footer-links ul a:hover { color: #6dd618; }
 
-.email-signup { padding-bottom: 40px; }
+.email-signup { padding-bottom: 5px; }
 
 .footer-section form {
 	text-align: left;
@@ -366,9 +366,9 @@ input[type=email], select, textarea {
 
 .footer-section .btn-ghost {
 	color: #FFF;
-	background-color: #50e622;
+	background-color: #111110;
   margin: 4px 0 4px 0px;
-  border-radius: 0 200px 200px 0;
+  border-radius:10px;
   width: 100px;
 }
 
