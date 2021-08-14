@@ -8,7 +8,7 @@ export default function Home() {
   
   const context = useContext(SettingsContext);
   const farmsListContext = useContext(FarmsContext)
-  // console.log(farmsListContext)
+  console.log(farmsListContext.farms)
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   function submitHandler(event) {
@@ -33,11 +33,11 @@ export default function Home() {
  
   if (context.loggedIn) {
     return (
-      
+      <>
       <form onSubmit={context.logout}>
         <button> logout</button>
       </form>
-     
+     </>
       
     );
   }

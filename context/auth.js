@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Component } from 'react';
+// import { Component } from 'react';
 import { useEffect } from 'react';
 import cookie from 'react-cookies';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
 const API = 'https://gofarm-api.herokuapp.com/api/token/'; //process.env.API_SERVER;
-const SECRET = 'SECRET_KEY'; //process.env.JWT_SECRET;
+// const SECRET = 'SECRET_KEY'; //process.env.JWT_SECRET;
 
 
 export const SettingsContext = React.createContext();

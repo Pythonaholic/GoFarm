@@ -7,13 +7,16 @@ import axios from 'axios';
 function FarmsProvider(props) {
   const [farms, setFarms] = useState([]);
 
-  useEffect( () => {
-    const farmsData = getData()
-    setFarms(farmsData)
+  useEffect( async () => {
+    const farmsData = await axios.get(farmsLink)
+    const farmsDataa = farmsData.data
+    console.log(farmsDataa)
+    setFarms(farmsDataa)
   },[]);
 
   const getData = async () => {
     const data = await axios.get(farmsLink)
+    // console.log(data.data)
     return data.data
   }
   const addFarm = async (farmsInfo) => {
