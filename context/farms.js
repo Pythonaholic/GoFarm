@@ -5,17 +5,19 @@ const farmsLink = 'https://gofarm-api.herokuapp.com/api/v1/farms/'
 export const FarmsContext = React.createContext();
 import axios from 'axios';
 function FarmsProvider(props) {
-  const [farms, setFarms] = useState([]);
-
-  useEffect( () => {
-    const farmsData = getData()
-    setFarms(farmsData)
-  },[]);
 
   const getData = async () => {
     const data = await axios.get(farmsLink)
-    return data.data
+    setFarms(data.data)
   }
+
+  const [farms, setFarms] = useState([]);
+
+  useEffect( () => {
+     getData()
+  },[]);
+
+  
   const addFarm = async (farmsInfo) => {
     const token = cookie.load('auth');
     const config = { headers: { Authorization: 'Bearer ' + token} };
