@@ -3,41 +3,39 @@ import { SettingsContext } from '../context/auth';
 import React, { useContext } from 'react';
 import { useState } from 'react';
 import { FarmsContext } from '../context/farms'; 
+import { stringify } from 'postcss';
 
 export default function Home() {
   
   const context = useContext(SettingsContext);
   const farmsListContext = useContext(FarmsContext)
-  console.log(farmsListContext.farms)
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   function submitHandler(event) {
     event.preventDefault();
-    // console.log('hello')
-    // console.log(username, password);
     context.login(username, password);
   }
 
   function usernameChangeHandler(event) {
     event.preventDefault();
 
-    // console.log('username', event.target.value);
     setUsername(event.target.value);
   }
 
   function passwordChangeHandler(event) {
     event.preventDefault();
-    // console.log('password', event.target.value);
     setPassword(event.target.value);
   }
+
  
   if (context.loggedIn) {
     return (
-      <>
+    
       <form onSubmit={context.logout}>
         <button> logout</button>
+        <h2>{farmsListContext.farms[0].farmName}</h2>
+        <img src={farmsListContext.farms[0].image1}></img>
       </form>
-     </>
       
     );
   }
