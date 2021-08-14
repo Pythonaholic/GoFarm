@@ -33,8 +33,6 @@ export default function Home() {
     
       <form onSubmit={context.logout}>
         <button> logout</button>
-        <h2>{farmsListContext.farms[0].farmName}</h2>
-        <img src={farmsListContext.farms[0].image1}></img>
       </form>
       
     );
