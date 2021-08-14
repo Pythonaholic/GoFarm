@@ -212,7 +212,7 @@ p {
 	margin: auto;
 	padding-top: 8%;
 	width: 150px;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.507);
 }
 
 .container div span {
@@ -281,9 +281,9 @@ p {
 /* FOOTER SECTION */
 /* -------------------------------------------*/
 .footer-section {
-	max-width: 1140px;
+	max-width: 100%;
 	margin: 0 auto;
-	background-color: #FFF;
+	background-color: rgb(255, 255, 255);
  	padding-top: 80px;
   padding-bottom: 20px;
 } 
@@ -293,6 +293,8 @@ p {
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
+
 
 .footer div { margin: 0 auto; }
 
@@ -331,6 +333,7 @@ p {
     font-size: 17px; 
     line-height: 1.5;
 }
+
 
 .footer-links ul a:hover { color: #6dd618; }
 
@@ -375,7 +378,7 @@ input[type=email], select, textarea {
 .footer-section .btn-ghost:hover {
 	color: #FFF;
 	border: 2px solid #3418d6;
-	background-color: #44d618;
+	background-color: #1ed618;
 }
 
 .footer-credit {
