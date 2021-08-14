@@ -2,12 +2,13 @@ import Head from 'next/head';
 import { SettingsContext } from '../context/auth';
 import React, { useContext } from 'react';
 import { useState } from 'react';
-import SettingsProvider from '../context/auth.js'
-
+import { FarmsContext } from '../context/farms'; 
 
 export default function Home() {
   
   const context = useContext(SettingsContext);
+  const farmsListContext = useContext(FarmsContext)
+  // console.log(farmsListContext)
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   function submitHandler(event) {

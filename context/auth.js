@@ -13,7 +13,7 @@ function SettingsProvider(props) {
   const [loggedIn, setloggedIn] = useState(false);
   const [token, setToken] = useState('');
   const [user, setUser] = useState({});
-  
+
 
   useEffect(() => {
     const token = cookie.load('auth');
@@ -62,6 +62,9 @@ function SettingsProvider(props) {
   const logout = () => {
     setLoginState(false, null, {});
   };
+  const signup = async userInfo => {
+    await axios.post('https://gofarm-api.herokuapp.com/accounts/signup/',userInfo)
+  }
   const state = {
     loggedIn,
     setloggedIn,
@@ -71,6 +74,7 @@ function SettingsProvider(props) {
     setToken,
     login,
     logout,
+    signup,
   };
   return (
     <SettingsContext.Provider value={state}>
