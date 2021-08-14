@@ -1,82 +1,98 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { SettingsContext } from '../context/auth';
+import React, { useContext } from 'react';
+import { useState } from 'react';
+import SettingsProvider from '../context/auth.js'
+
 
 export default function Home() {
+  
+  const context = useContext(SettingsContext);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  function submitHandler(event) {
+    event.preventDefault();
+    // console.log('hello')
+    // console.log(username, password);
+    context.login(username, password);
+  }
+
+  function usernameChangeHandler(event) {
+    event.preventDefault();
+
+    // console.log('username', event.target.value);
+    setUsername(event.target.value);
+  }
+
+  function passwordChangeHandler(event) {
+    event.preventDefault();
+    // console.log('password', event.target.value);
+    setPassword(event.target.value);
+  }
+ 
+  if (context.loggedIn) {
+    return (
+      
+      <form onSubmit={context.logout}>
+        <button> logout</button>
+      </form>
+     
+      
+    );
+  }
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+    
+    <div>
+      <form
+        className="flex flex-col w-1/2 gap-4 p-8 mx-auto my-4 text-center bg-gray-200 border-2 border-gray-400 rounded-lg text-md"
+        onSubmit={submitHandler}
+      >
+        <div className="flex flex-col ">
+          <label
+            className="mb-2 font-bold uppercase text-grey-darkest"
+            htmlFor="username"
           >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            User Name
+          </label>
+          <input
+            className="px-3 py-2 border text-grey-darkest"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="User Name"
+            onChange={usernameChangeHandler}
+          />
         </div>
-      </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="flex flex-col ">
+          <label
+            className="mb-2 font-bold uppercase text-grey-darkest"
+            htmlFor="password"
+          >
+            Password
+          </label>
+          <input
+            className="px-3 py-2 border text-grey-darkest"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            onChange={passwordChangeHandler}
+          />
+        </div>
+
+        <button
+          className="px-3 py-4 mt-8 uppercase bg-gray-500 rounded text-green hover:bg-gray-600 text-gray-50"
+          type="submit"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+          Sign In
+        </button>
+      </form>
     </div>
-  )
+    
+
+    
+    
+  );
+
 }
