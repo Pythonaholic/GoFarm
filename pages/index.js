@@ -12,7 +12,7 @@ export default function Home() {
   const [password, setPassword] = useState('');
   function submitHandler(event) {
     event.preventDefault();
-    console.log('hello')
+    // console.log('hello')
     // console.log(username, password);
     context.login(username, password);
   }
@@ -20,13 +20,13 @@ export default function Home() {
   function usernameChangeHandler(event) {
     event.preventDefault();
 
-    console.log('username', event.target.value);
+    // console.log('username', event.target.value);
     setUsername(event.target.value);
   }
 
   function passwordChangeHandler(event) {
     event.preventDefault();
-    console.log('password', event.target.value);
+    // console.log('password', event.target.value);
     setPassword(event.target.value);
   }
  

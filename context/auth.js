@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import cookie from 'react-cookies';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
-const API = 'http://127.0.0.1:8000/api/token/'; //process.env.API_SERVER;
+const API = 'https://gofarm-api.herokuapp.com/api/token/'; //process.env.API_SERVER;
 const SECRET = 'SECRET_KEY'; //process.env.JWT_SECRET;
 
 
@@ -26,11 +26,11 @@ function SettingsProvider(props) {
       const id = await jwt.decode(token).user_id;
       const config = { headers: { Authorization: 'Bearer ' + token} };
       const userData = await axios.get(
-        `http://127.0.0.1:8000/accounts/${id}`,
+        `https://gofarm-api.herokuapp.com/accounts/${id}`,
         config
       );
-      // console.table(user);
-      setLoginState(true, token, userData);
+      // console.table(userData);
+      setLoginState(true, token, userData.data);
     } catch (error) {
       setLoginState(false, null, {});
       console.log(`Token Validation Error ${error.message}`);
@@ -51,8 +51,10 @@ function SettingsProvider(props) {
         username,
         password,
       };
+      console.log(data)
       const response = await axios.post(API, data);
-      validateToken(response.body.access);
+      console.log(response)
+      validateToken(response.data.access);
     } catch (error) {
       console.error('Signin Error', error.message);
     }
