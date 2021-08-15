@@ -14,7 +14,7 @@ function DetailsPage() {
     const context = useContext(SettingsContext);
     const farmsListContext = useContext(FarmsContext)
     const id = cookie.load('farm_id');
-    const onwer = cookie.load('owner_id');
+    
 
     const [imgNum, setimgNum] = useState(0);
     const [owner,setOwner] = useState({});
@@ -50,28 +50,21 @@ function DetailsPage() {
 
 
     async function getowner(){
-        const config = { headers: { Authorization: 'Bearer ' + context.token} };
-        console.log(detailData.owner)
+       const ownerid = cookie.load('owner_id');
+       console.log(ownerid)
       const userData = await axios.get(
-        `https://gofarm-api.herokuapp.com/accounts/${detailData.owner}`,
-        config
+        `https://gofarm-api.herokuapp.com/accounts/${ownerid}`, 
       );
-      setOwner(userData.data)   
+      setOwner(userData.data)
     }
 
 
     useEffect(() => {
-        
+        getowner()
        
       }, []);
 
-    const arr = [detailData.image1, detailData.image2, detailData.image3, detailData.image4]
-
-
-    
-
-    
-    
+    const arr = [detailData.image1, detailData.image2, detailData.image3, detailData.image4] 
 
 
     function submitNext(event){

@@ -23,10 +23,10 @@ function SettingsProvider(props) {
     try {
 
       const id = await jwt.decode(token).user_id;
-      const config = { headers: { Authorization: 'Bearer ' + token} };
+    
       const userData = await axios.get(
-        `https://gofarm-api.herokuapp.com/accounts/${id}`,
-        config
+        `https://gofarm-api.herokuapp.com/accounts/${id}`
+
       );
 
       setLoginState(true, token, userData.data);
