@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { SettingsContext } from '../context/auth'; //1
 import  { useContext } from 'react'; //3
 import { FarmsContext } from '../context/farms'; //2
-function AddFarm() {
+function Form() {
   const context = useContext(SettingsContext); //4
   const farmsListContext = useContext(FarmsContext) //5
   function submitHandler(e){
@@ -131,4 +131,4 @@ function AddFarm() {
     )
 }
 
-export default AddFarm
+export default Form
