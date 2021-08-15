@@ -19,10 +19,15 @@ function FarmsProvider(props) {
 
   
   const addFarm = async (farmsInfo) => {
-    const token = cookie.load('auth');
-    const config = { headers: { Authorization: 'Bearer ' + token} };
-    await axios.post(farmsLink,farmsInfo,config);
-    setFarms(getData())
+    try {
+      const token = cookie.load('auth');
+      const config = { headers: { Authorization: 'Bearer ' + token} };
+      await axios.post(farmsLink,farmsInfo,config);
+      setFarms(getData())
+      
+    } catch (error) {
+      console.error(error)
+    }
   }
     const state = {
     farms,
