@@ -5,15 +5,21 @@ import { useState } from 'react';
 import { FarmsContext } from '../context/farms'; //2
 import { stringify } from 'postcss';
 import Footer from '../component/footer';
-
+import Slider from '../component/slider';
+import { useEffect } from 'react';
+import axios from 'axios';
 export default function Home() {
   
   const context = useContext(SettingsContext); //4
   const farmsListContext = useContext(FarmsContext) //5
   
-    
   return(  
+    <>
+    {/* <Footer /> */}
+
+    <Slider/>
     <Footer />
+    </>
   );
 
 }

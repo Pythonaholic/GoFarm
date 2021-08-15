@@ -94,7 +94,7 @@ function DetailsPage() {
 
 
     return (
-        <div class="detail">
+        <div className="detail">
 
 
             <div class="imgdiv">

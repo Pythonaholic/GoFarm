@@ -8,6 +8,7 @@ import '../styles/detailspage.scss'
 import '../styles/form.scss'
 import '../styles/extraformcss.scss'
 import '../styles/sign.scss'
+import '../styles/slider.scss'
 
 
 
