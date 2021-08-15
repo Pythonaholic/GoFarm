@@ -17,7 +17,7 @@ function Footer() {
           <section className="footer-section">
             <div className="footer">
               <div className="social">
-                <a href="#header"><i className="fas fa-leaf logo" /></a>
+                <a href="#header"><i className="fas fa-home logo" /><i class="fas fa-tree "></i>GoFarm<br></br></a>
                 <ul>
                   <li>
                     <a href="https://twitter.com/ancientnutr" target="_blank"><i className="fab fa-twitter-square" /></a>
@@ -29,6 +29,7 @@ function Footer() {
                     <a href="https://www.facebook.com/ancientnutrition/" target="_blank"><i className="fab fa-facebook-square" /></a>
                   </li>
                 </ul>
+                <p><br></br><br></br>Find Your Best Farm.</p>
               </div>
               <div className="footer-links">
                 <h4>Links</h4>
@@ -48,17 +49,17 @@ function Footer() {
                 </ul>
               </div>
               <div className="email-signup">
-                <h4>Subscribe</h4>
+                <h4>Sign up</h4>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                   <label>Sign up and stay up-to-date with new <br />products, tips, news and recepies.</label><br />
                   <div className="section-wrapper">
-                    <input id="email" type="email" name="email" placeholder="Enter email..." required />
-                    <input id="submit" className="btn-ghost" type="submit" defaultValue="Sign up" />
+                    
+                    <button id="submit" className="btn-ghost" type="submit" defaultValue="Sign up">Sign up</button>
                   </div>
                 </form> 
               </div>
             </div>
-            <p className="footer-credit">Copyright © 2018 Designed by Gelso Designs. All rights reserved. Website content taken from <a href="http://ancientnutrition.com/" target="_blank">Ancient Nutrition</a>.</p>
+            <p className="footer-credit">Copyright © 2021 Designed by GoFarm Team. All rights reserved. Find Your Best Farm.</p>
           </section>
         </div>
       );

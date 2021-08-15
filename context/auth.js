@@ -54,13 +54,15 @@ function SettingsProvider(props) {
       validateToken(response.data.access);
     } catch (error) {
       console.error('Signin Error', error.message);
+      alert(error.message)
     }
   };
   const logout = () => {
     setLoginState(false, null, {});
   };
   const signup = async userInfo => {
-    await axios.post('https://gofarm-api.herokuapp.com/accounts/signup/',userInfo)
+    const b = await axios.post('https://gofarm-api.herokuapp.com/accounts/signup/',userInfo)
+    console.log(b)
   }
   const state = {
     loggedIn,
