@@ -24,19 +24,25 @@ function Form() {
       image4:e.target.image4.value,
       owner: context.user.id,
     }
+    console.log(data)
     farmsListContext.addFarm(data)
+    setTimeout(() => {
+
+      // window.location.href = `/addFarm`;
+
+  }, 10000);
   }
     
 
   
     return (
         <div className='formcss'>
-            <div className="container">
-        <div className="card">
+            <div className="container items-center justify-center m-auto">
+        <div className="flex card">
           <div className="card-image">	
-            <h2 className="card-heading">
-              Add farm
-              <small>Add your farm now to make profit</small>
+            <h2 className="card-heading ">
+               <span className='text-gray-700'> Add a Farm </span>
+              <small className='font-bold text-gray-700'>Add your Farm now to Gain more Profit</small>
             </h2>
           </div>
           <form className="card-form" onSubmit = {submitHandler}>
@@ -111,9 +117,9 @@ function Form() {
         </select>
         </div>
         <label>Adds</label>
-        <input type="checkbox" className='w-8 h-8 text-indigo-600 border border-indigo-600 form-checkbox' id="development" name="BBQ" required /><label className="light" htmlFor="development">BBQ</label><br />
-        <input type="checkbox" className='w-8 h-8 text-green-500 border border-green-500 form-checkbox' id="design"  name="pool" required /><label className="light" htmlFor="design">Pool</label><br />
-        <input type="checkbox" className='w-8 h-8 text-pink-600 border border-pink-600 form-checkbox' id="business"  name="AC" required /><label className="light" htmlFor="business">Air Conditioning</label>
+        <input type="checkbox" className='w-8 h-8 text-indigo-600 border border-indigo-600 form-checkbox' id="development" name="BBQ" /><label className="light" htmlFor="development">BBQ</label><br />
+        <input type="checkbox" className='w-8 h-8 text-green-500 border border-green-500 form-checkbox' id="design"  name="pool" /><label className="light" htmlFor="design">Pool</label><br />
+        <input type="checkbox" className='w-8 h-8 text-pink-600 border border-pink-600 form-checkbox' id="business"  name="AC" /><label className="light" htmlFor="business">Air Conditioning</label>
             </div>
             
 

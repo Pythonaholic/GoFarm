@@ -9,6 +9,10 @@ import '../styles/extraformcss.scss'
 import '../styles/sign.scss'
 import '../styles/detailsinfo.scss'
 import '../styles/rivewcom.scss'
+import '../styles/myfarms.scss'
+import '../styles/header_main.scss';
+import '../styles/main_comp.scss';
+import '../styles/slider_main.scss';
 import toast, { Toaster } from 'react-hot-toast';
 
 

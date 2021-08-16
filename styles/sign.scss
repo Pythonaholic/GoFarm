@@ -1,4 +1,9 @@
 .signup{
+
+  section{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+
+  }
     * {
       box-sizing: border-box;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -17,7 +22,7 @@
       margin: 0;
       font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
       // color: #857567;
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6-YOYrOOZQ9Q5PnqdxPWihv6klzmicl4-Q&usqp=CAU");
+      // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6-YOYrOOZQ9Q5PnqdxPWihv6klzmicl4-Q&usqp=CAU");
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
@@ -445,7 +450,7 @@
         align-content: center;
         justify-content: center;
 
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+        // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
       }
       .sss{
         margin-top: 200px;

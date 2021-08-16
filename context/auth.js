@@ -53,10 +53,10 @@ function SettingsProvider(props) {
       const response = await axios.post(API, data);
 
       validateToken(response.data.access);
-      toast.success(`Login success`)
+      toast.success(`Login Success`)
 
     } catch (error) {
-      toast.error(`Username or password are wrong please try again`)
+      toast.error(`Either username or password are wrong`)
       console.error('Signin Error', error.message);
 
     }
@@ -73,7 +73,7 @@ function SettingsProvider(props) {
      
     } catch(error){
 
-      toast.error(`Please try again`)
+      toast.error(`Username already exists`)
       console.error('Signup Error', error.message);
 
     }
