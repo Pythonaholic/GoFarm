@@ -21,13 +21,13 @@ function Footer() {
                 
                 <ul>
                   <li>
-                    <a href="https://twitter.com/ancientnutr" target="_blank"><i className="fab fa-twitter-square" /></a>
+                    <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter-square" /></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/explore/tags/modernsuperfood/" target="_blank"><i className="fab fa-instagram" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><i className="fab fa-instagram" /></a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/ancientnutrition/" target="_blank"><i className="fab fa-facebook-square" /></a>
+                    <a href="https://www.facebook.com" target="_blank"><i className="fab fa-facebook-square" /></a>
                     
                   </li>
                   <li>
@@ -35,11 +35,11 @@ function Footer() {
         
                   </li>
                   <li>
-                    <a href="https://github.com/" target="_blank"><i className="fab fa-facebook-messenger" /></a>
+                    <a href="https://web.facebook.com" target="_blank"><i className="fab fa-facebook-messenger" /></a>
         
                   </li>
                   <li>
-                    <a href="https://github.com/" target="_blank"><i className="fab fa-google-drive" /></a>
+                    <a href="https://www.google.jo/" target="_blank"><i className="fab fa-google-drive" /></a>
         
                   </li>
                 </ul>
