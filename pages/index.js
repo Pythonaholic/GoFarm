@@ -5,15 +5,19 @@ import { useState } from 'react';
 import { FarmsContext } from '../context/farms'; //2
 import { stringify } from 'postcss';
 import Footer from '../component/footer';
+import Main from '../component/main';
+import Nav from '../component/nav';
+import Main_component from '../component/main-comp';
 
 export default function Home() {
-  
   const context = useContext(SettingsContext); //4
-  const farmsListContext = useContext(FarmsContext) //5
-  
-    
-  return(  
-    <Footer />
-  );
+  const farmsListContext = useContext(FarmsContext); //5
 
+  return (
+    <div className="">
+      <Main />
+
+      <Footer />
+    </div>
+  );
 }

@@ -1,0 +1,272 @@
+/* BREAKPOINT MIXINS */
+.main_component {
+  @mixin bp-small {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @mixin bp-medium {
+    @media (min-width: 660px) {
+      @content;
+    }
+  }
+
+  @mixin bp-normal {
+    @media (min-width: 960px) {
+      @content;
+    }
+  }
+
+  /* DIAMOND STYLES */
+  .diamond__container {
+    max-width: 150px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @include bp-small {
+      max-width: 300px;
+      padding-left: 26px;
+    }
+
+    @include bp-medium {
+      max-width: 600px;
+      padding-left: 59px;
+    }
+
+    @include bp-normal {
+      max-width: 885px;
+    }
+
+    > li {
+      display: inline-block;
+      border: 1px solid transparent;
+
+      @include bp-small {
+        display: block;
+        margin-top: -106px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:nth-child(even) {
+          margin-left: 108px;
+          border-left: transparent;
+          border-top: transparent;
+        }
+      }
+
+      @include bp-medium {
+        display: inline-block;
+        margin-top: 22px;
+
+        &:nth-child(even) {
+          margin-left: 78px;
+          border-left: 1px transparent #f4eedd;
+          border-top: 1px transparent #f4eedd;
+        }
+
+        &:nth-child(n + 2) {
+          margin-top: -120px;
+        }
+
+        &:nth-child(3n + 1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(3n + 5) {
+          margin-left: 78px;
+        }
+
+        &:nth-child(3n + 3) {
+          margin-top: -120px;
+          margin-left: 142px;
+        }
+      }
+
+      @include bp-normal {
+        &:nth-child(5n-2) {
+          margin-left: 80px;
+        }
+
+        &:nth-child(5) {
+          margin-left: 79px;
+        }
+
+        &:nth-child(7) {
+          margin-left: 79px;
+        }
+
+        &:nth-child(6) {
+          margin-left: 2px;
+        }
+
+        &:nth-child(8) {
+          margin-left: 80px;
+        }
+
+        &:nth-child(5n-1) {
+          margin-left: 2px;
+          margin-left: 142px;
+          margin-right: 2px;
+        }
+        //   &:nth-child(n-2) {
+        //     margin-left: 2px;
+        //   }
+      }
+    }
+
+    .diamond__item {
+      text-decoration: none;
+      font-size: 16px;
+      background: teal;
+      width: 150px;
+      height: 150px;
+      color: #f4eedd;
+      margin-top: 61px;
+
+      display: flex;
+      position: relative;
+
+      overflow: hidden;
+      backface-visibility: hidden;
+      perspective: 1000;
+
+      transform: rotate(-45deg);
+
+      @include bp-medium {
+        width: 200px;
+        height: 200px;
+      }
+
+      &:hover .diamond__content .content__info {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.35s;
+      }
+
+      &:hover .diamond__content .content__overlay {
+        opacity: 1;
+        transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+
+      .diamond__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        transform: rotate(45deg);
+
+        .content__info {
+          z-index: 10;
+          opacity: 0;
+          transform: translate3d(0, -45px, 0);
+          transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+          p {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+        }
+
+        .content__overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 1;
+          opacity: 0;
+          transform: rotate(45deg);
+          transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .content__image--1 {
+          background: url('https://images.pexels.com/photos/92870/pexels-photo-92870.jpeg?cs=srgb&dl=pexels-leonie-fahjen-92870.jpg&fm=jpg')
+            no-repeat center right;
+        }
+
+        .content__image--2 {
+          background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Backyardpool.jpg/1200px-Backyardpool.jpg')
+            no-repeat center center;
+        }
+
+        .content__image--3 {
+          background: url('https://images.pexels.com/photos/4916534/pexels-photo-4916534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+            no-repeat center center;
+        }
+
+        .content__image--4 {
+          background: url('https://media1.giphy.com/media/y4iHJEhLTIWnm/giphy.gif?cid=ecf05e47pl9bml74o7dx9bafd7kefozz253l71ua3q510ajp&rid=giphy.gif&ct=g')
+            no-repeat center right;
+        }
+
+        .content__image--5 {
+          background: url('https://media0.giphy.com/media/E8BKRmebpiire/giphy.gif?cid=ecf05e47kxb8gvj2gwzjjzzjqczqbokiwveqkka6m6wcyv1r&rid=giphy.gif&ct=g')
+            no-repeat center center;
+        }
+
+        .content__image--6 {
+          background: url('https://images.pexels.com/photos/7396036/pexels-photo-7396036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+            no-repeat center center;
+        }
+
+        .content__image--7 {
+          background: url('https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/luis-tosta-mezdyn98la8-unsplash_0.jpeg?itok=A5jmvsuW')
+            no-repeat center center;
+        }
+
+        .content__image--8 {
+          background: url('https://images.pexels.com/photos/3618162/pexels-photo-3618162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+            no-repeat center center;
+        }
+
+        .content__image {
+          background-size: cover;
+
+          height: 170%;
+          width: 170%;
+          margin-top: -50%;
+          margin-left: -50%;
+
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  /* STANDARD STYLES */
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: #24130b;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    @include bp-medium {
+      font-size: 30px;
+    }
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: yellow;
+  }
+}
