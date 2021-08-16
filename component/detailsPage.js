@@ -81,6 +81,7 @@ function DetailsPage() {
     function getAuth() {
 
         rivews.forEach(async (item) => {
+            
 
             const authData = await axios.get(
                 `https://gofarm-api.herokuapp.com/accounts/${item.author}`,
@@ -101,7 +102,13 @@ function DetailsPage() {
 
     useEffect(() => {
 
-        getAuth()
+        setTimeout(() => {
+
+            getAuth()
+
+        }, 1000);
+
+        
 
     }, [rivews]);
 
@@ -185,7 +192,7 @@ function DetailsPage() {
 
 
     return (
-        <div>
+        <div class="alldetails">
 
 
             <div className='info'>
@@ -288,9 +295,6 @@ function DetailsPage() {
 
                                                     </Then>
                                                     <Else>
-                                                        <div>
-
-                                                        </div>
                                                     </Else>
                                                 </If>
 
@@ -318,7 +322,7 @@ function DetailsPage() {
                             <div id="pizza">
                                 <form onSubmit={comminethandler}>
                                     <textarea name="comments" placeholder="Comment.." required></textarea>
-                                    <input type="number" className="input-field" name='rating' required max="10" min="0" placeholder='Rate out of 10' />
+                                    <input type="number" className="input-field" name='rating' required max="10.0" min="0.0" placeholder='Rate out of 10'/>
                                     <input type="hidden" className="input-field" name='farm' value={cookie.load('farm_id')} />
                                     <input type="hidden" className="input-field" name='author' value={context.user.id} />
                                     <button class="button submit">Submit</button>

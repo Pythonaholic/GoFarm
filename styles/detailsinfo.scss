@@ -1,3 +1,10 @@
+.alldetails{
+
+  margin-top: 59px;
+  padding-top: 50px;
+
+
+}
 .info{
     /* fonts  */
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
@@ -10,14 +17,15 @@ body {
 	}
 
 #container{
-	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+
 	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 10px 10px 0px 0px;
 	overflow: hidden;
-	margin: 5em auto;
+	margin: auto;
 	height: 500px;
 	width: 1200px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
 	
 }
 

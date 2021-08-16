@@ -1,7 +1,20 @@
+
 .signup{
+
+  .bodylogin{
+    width: 1200px;
+    margin: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+
+  }
+  
+
+  margin-top: 59px;
 
   section{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
   }
     * {
@@ -43,7 +56,7 @@
       justify-content: center;
       height: calc(100% / 3);
       padding: 12px;
-      background: #74df2c url("https://images.unsplash.com/photo-1443131307017-4097c8ac7763?dpr=2&auto=format&fit=crop&w=1500&h=1909&q=80&cs=tinysrgb") no-repeat center center/cover;
+      background: #65d9f7 url("https://w0.peakpx.com/wallpaper/494/590/HD-wallpaper-forest-mist-trees-long-road-nature.jpg") no-repeat center center/cover;
     }
     main aside div:empty {
       opacity: 0.5;
@@ -52,7 +65,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #74df2c url("https://images.unsplash.com/photo-1443131307017-4097c8ac7763?dpr=2&auto=format&fit=crop&w=1500&h=1909&q=80&cs=tinysrgb") no-repeat center center/cover;
+      background: #98eaf5;
       background-blend-mode: screen;
     }
     main aside svg {
@@ -100,9 +113,12 @@
     }
     main section h1 {
       display: flex;
-      justify-content: center;
-      padding: 12px;
-      color: #74df2c;
+
+      // justify-content: center;
+      justify-content: space-between;
+      padding: 5px;
+      margin: 5px 15px;
+      color: #65d9f7;
       font-size: 28px;
       line-height: 1;
       text-align: center;
@@ -110,12 +126,12 @@
     }
     main section h1 a {
       display: block;
-      margin: 0 6px;
+      // margin: 0 20px;
       cursor: pointer;
       transform: none;
     }
     main section h1 a:hover, main section h1 a:focus {
-      color: #976a36;
+      color: #973636;
     }
     main section h1 a:active {
       color: #857567;
@@ -132,6 +148,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      padding: 10px;
       width: 100%;
       height: calc(100% - 40px);
     }
@@ -149,9 +166,10 @@
     }
     main section form fieldset div label {
       display: block;
+      width: 228px;
       margin: 0;
       padding: 6px 9px;
-      background: #74df2c;
+      background: #65d9f7;
       color: white;
       font-size: 16px;
       cursor: pointer;
@@ -160,14 +178,14 @@
     main section form fieldset div input {
       display: block;
       background: white;
-      border: 1px solid #74df2c;
+      border: 1px solid #f597d1;
       border-left: 0;
       border-radius: 0 2px 2px 0;
       box-shadow: none;
       margin: 0;
       padding: 6px 9px;
       width: 100%;
-      color: #857567;
+      color: #856767;
       font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
       font-size: 16px;
     }
@@ -241,12 +259,12 @@
       font-size: 24px;
       text-transform: lowercase;
       line-height: 2;
-      background: #74df2c;
+      background: #65d9f7;
       color: white;
       cursor: pointer;
     }
     main section form input[type=submit]:hover, main section form input[type=submit]:focus {
-      background: #976a36;
+      background: #c0f83d;
     }
     main section form input[type=submit]:active {
       background: #857567;
@@ -383,7 +401,7 @@
     main.pre-enter section form input[type=submit] {
       transform-origin: center bottom;
       transform: scaleY(0);
-      color: #74df2c;
+      color: #65d9f7;
       visibility: hidden;
     }
     main.on-enter aside {
@@ -443,7 +461,7 @@
       visibility: visible;
     }
     
-    @media only screen and (min-width: 624px) {
+    @media only screen and (min-width: 400px) {
       body {
         display: flex;
         align-items: center;
@@ -466,7 +484,7 @@
       }
       main aside, main section {
         height: 100%;
-        width: 300px;
+        width: 400px;
       }
       main.pre-enter {
         opacity: 0;
@@ -487,7 +505,7 @@
     }
     @-webkit-keyframes lemon-white {
       0% {
-        color: #74df2c;
+        color: #65d9f7;
       }
       100% {
         color: white;
@@ -495,7 +513,7 @@
     }
     @keyframes lemon-white {
       0% {
-        color: #74df2c;
+        color: #65d9f7;
       }
       100% {
         color: white;

@@ -23,7 +23,6 @@ function SearchForm() {
         setifUserSelect(true)
         setuserStateSelect(userSelect)
 
-
     }
 
     function submitDetails(event){
@@ -38,9 +37,13 @@ function SearchForm() {
     }
     
     return (
-        <div>
+        <div className="allsearch">
             <div className='searchForm'>
-                <body>
+              
+                    <div>
+                        <h2>Select Farm Location</h2>
+                        <p>Find the best place for you and see the details now</p>
+                    </div>
                     <form className="form-wrapper" onSubmit={submitSearch}>
                         <select id="search" name="select">
                             <option value="Irbid">Irbid</option>
@@ -58,7 +61,7 @@ function SearchForm() {
                         </select>
                         <input type="submit" defaultValue="go" id="submit" value="Search" />
                     </form>
-                </body>
+               
             </div>
             <div className='searchResult'>
                 <If condition={ifUserSelect}>
