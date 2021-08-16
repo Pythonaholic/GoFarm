@@ -34,6 +34,14 @@ width: auto;
 color: #E67E22;
 }
 
+.photo{
+width: 200px;
+margin-bottom: -10px;
+
+
+
+}
+
 h1 {
 font-size: 55px;
 font-weight: 300;
@@ -91,7 +99,8 @@ font-size: 16px;
 width: 160px;
 padding: 6px 12px;
 border-radius: 200px;
-border: 2px solid #0bdd39;
+border: 2px solid #d60bdd; 
+// obada
 color: #E67E22;
 background-color: #FFF;
 }
@@ -212,7 +221,7 @@ text-align: center;
 margin: auto;
 padding-top: 8%;
 width: 150px;
-color: #fff;
+color: rgba(255, 255, 255, 0.507);
 }
 
 .container div span {
@@ -281,9 +290,9 @@ padding-bottom: 15px;
 /* FOOTER SECTION */
 /* -------------------------------------------*/
 .footer-section {
-max-width: 1140px;
+max-width: 1200px;
 margin: 0 auto;
-background-color: #FFF;
+background-color: rgb(255, 255, 255);
  padding-top: 80px;
 padding-bottom: 20px;
 } 
@@ -294,9 +303,11 @@ padding-bottom: 20px;
   margin: 0 auto;
 }
 
+
+
 .footer div { margin: 0 auto; }
 
-.footer .logo { color: #50e622; }
+.footer .logo { color: #e69822; }
 
 .footer h4 {
   margin-top: 0;
@@ -312,27 +323,32 @@ padding-bottom: 20px;
 
 .social { float: left; }
 
-.social ul li { float: left; }
+.social ul li { float: left;  }
 
 .social ul i {
   font-size: 30px;
   color: #555;
-  padding-top: 10px;
   padding-right: 10px;
   text-align: center;  
+  padding-bottom: 10px;
+  right: 50px;
+  
 }
 
-.social ul i:hover { color: #4ed618; }
-
+.social ul i:hover { color: #9a18d6; }
+// obada
 .footer-links ul a {
   list-style: none;
   text-decoration: none;
   color: #555;
   font-size: 17px; 
   line-height: 1.5;
+  
 }
 
-.footer-links ul a:hover { color: #6dd618; }
+
+.footer-links ul a:hover { color: #a018d6; }
+// obada
 
 .email-signup { padding-bottom: 5px; }
 
@@ -347,14 +363,14 @@ min-width: 224px;
 overflow: hidden;
 display: inline-block;
 padding-top: 10px;
-
+float: left;
 }
 
 input[type=email], select, textarea {
 width: 165px;
 padding: 8px;
 padding-left: 20px;
-border: 1px solid #49e622;
+border: 1px solid #ee850e;
 border-radius: 200px 0 0 200px;
 box-sizing: border-box;
 margin-top: 4px;
@@ -374,8 +390,9 @@ width: 100px;
 
 .footer-section .btn-ghost:hover {
 color: #FFF;
-border: 2px solid #3418d6;
-background-color: #44d618;
+border: 2px solid #b80aec;
+background-color: #b618d6;
+// obada
 }
 
 .footer-credit {
@@ -385,10 +402,11 @@ margin: 0 auto;
 padding-top: 20px;
 padding-right: 2%;
 padding-left: 2%;
-border-top: 2px solid #4ed618;
+border-top: 2px solid #a018d6; 
+// obada
 }
 
-.footer-credit a { color: #50e622; }
+.footer-credit a { color: #e97210; }
 
 .footer-credit a:hover,
 .footer-credit a:active {
@@ -479,6 +497,7 @@ h3 {
 .social {
   padding-left: 2%;
   padding-right: 30px;
+  
 }
   
 .footer-links { padding-right: 30px; }

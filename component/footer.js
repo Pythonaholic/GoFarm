@@ -10,26 +10,38 @@ function Footer() {
 
     return (
         <div className = 'footer'>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossOrigin="anonymous" />
-          <title>Product Page | Gelso Designs</title>
           <section className="footer-section">
             <div className="footer">
               <div className="social">
-                <a href="#header"><i className="fas fa-home logo" /><i class="fas fa-tree "></i>GoFarm<br></br></a>
+                <a href="/"><img src="https://i.ibb.co/bsP31TV/black-s.png" className='photo'  alt="" /><br></br></a>
+                
                 <ul>
                   <li>
-                    <a href="https://twitter.com/ancientnutr" target="_blank"><i className="fab fa-twitter-square" /></a>
+                    <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter-square" /></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/explore/tags/modernsuperfood/" target="_blank"><i className="fab fa-instagram" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><i className="fab fa-instagram" /></a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/ancientnutrition/" target="_blank"><i className="fab fa-facebook-square" /></a>
+                    <a href="https://www.facebook.com" target="_blank"><i className="fab fa-facebook-square" /></a>
+                    
+                  </li>
+                  <li>
+                    <a href="https://github.com/" target="_blank"><i className="fab fa-github" /></a>
+        
+                  </li>
+                  <li>
+                    <a href="https://web.facebook.com" target="_blank"><i className="fab fa-facebook-messenger" /></a>
+        
+                  </li>
+                  <li>
+                    <a href="https://www.google.jo/" target="_blank"><i className="fab fa-google-drive" /></a>
+        
                   </li>
                 </ul>
-                <p><br></br><br></br>Find Your Best Farm.</p>
+                
               </div>
               <div className="footer-links">
                 <h4>Links</h4>
@@ -61,6 +73,7 @@ function Footer() {
             </div>
             <p className="footer-credit">Copyright © 2021 Designed by GoFarm Team. All rights reserved. Find Your Best Farm.</p>
           </section>
+          
         </div>
       );
 }

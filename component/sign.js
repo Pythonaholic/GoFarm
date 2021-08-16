@@ -134,7 +134,7 @@ function SignupOrIn() {
                     <fieldset>
                         <div>
                             <label htmlFor="password">Password</label>
-                            <input id="password" type="password" name='password' placeholder="••••••••" required />
+                            <input id="password" type="password" name='password' placeholder="••••••••" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
                         </div>
                     </fieldset>
                 </div>
