@@ -294,14 +294,13 @@ padding-bottom: 15px;
 /* FOOTER SECTION */
 /* -------------------------------------------*/
 .footer-section {
-max-width: 100%;
+max-width: 1900px;
 margin: 0 auto;
-background-color: rgb(255, 255, 255);
+background-color: #222;
  padding-top: 20px;
 padding-bottom: 20px;
+border-radius: 10px 10px 0 0;
 box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
-
 } 
 
 .footer {
@@ -320,6 +319,11 @@ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: 300;
+  color: white;
+}
+.footer form label{
+  color: rgb(161, 159, 159);
+
 }
 
 .footer ul {
@@ -330,6 +334,10 @@ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX
 
 .social { float: left; }
 
+.footer P{
+  color: rgb(161, 159, 159);
+
+}
 .social ul li { float: left;  }
 
 .social ul i {
@@ -347,7 +355,8 @@ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX
 .footer-links ul a {
   list-style: none;
   text-decoration: none;
-  color: #555;
+  
+  color: rgb(161, 159, 159);
   font-size: 17px; 
   line-height: 1.5;
   
@@ -389,15 +398,17 @@ float: left;
 
 .footer-section .btn-ghost {
 color: #FFF;
-background-color: #111110;
+background-color: #31d0f8;
+border:#31d0f8;
 margin: 4px 0 4px 0px;
-border-radius:10px;
+border-radius:5px;
 width: 100px;
+font-weight: bolder;
 }
 
 .footer-section .btn-ghost:hover {
 color: #FFF;
-border: 2px solid #b80aec;
+
 background-color: #b618d6;
 // obada
 }
@@ -406,6 +417,8 @@ background-color: #b618d6;
 font-size: 16px;
 text-align: center;
 margin: 0 auto;
+color: rgb(161, 159, 159);
+
 padding-top: 20px;
 padding-right: 2%;
 padding-left: 2%;

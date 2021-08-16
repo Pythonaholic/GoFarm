@@ -15,7 +15,7 @@ function Footer() {
       <section className="footer-section">
         <div className="footer">
           <div className="social">
-            <a href="/"><img src="https://i.ibb.co/bsP31TV/black-s.png" className='photo' alt="" /><br></br></a>
+            <a href="/"><img src="https://i.ibb.co/qD6F1Pp/white-s.png" className='photo' alt="" /><br></br></a>
 
             <ul>
               <li>
@@ -79,6 +79,20 @@ function Footer() {
             </form>
           </div>
           </Then>
+          <Else>
+          <div className="email-signup">
+
+          <h4>Add Farm</h4>
+            <form id="form" action="/myfarm">
+              <label>Be our partner and add your<br />farm to make more profit.</label><br />
+              <div className="section-wrapper">
+
+                <button id="submit" className="btn-ghost" type="submit" defaultValue="Add Farm">Add</button>
+              </div>
+            </form>
+          </div>
+            
+          </Else>
           </If>
         </div>
         <p className="footer-credit">Copyright © 2021 Designed by GoFarm Team. All rights reserved. Find Your Best Farm.</p>

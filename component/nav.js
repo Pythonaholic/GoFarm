@@ -85,7 +85,7 @@ function Nav() {
         <nav id="nav" className="out">
           <ul>
             <li>
-              <span class="nav-label"><form onSubmit={logouthandler}><button>LogOut</button></form></span>
+              <span class="nav-label"><form onSubmit={logouthandler}><button>Logout</button></form></span>
             </li>
             <li>
               <span className="nav-label"><a href='/'>Home</a></span>
@@ -94,7 +94,7 @@ function Nav() {
               <span className="nav-label"><a href='/search'>Search</a></span>
             </li>
             <li>
-              <span className="nav-label"><a href='/myfarm'>My Farm</a></span>
+              <span className="nav-label"><a href='/myfarm'>My Farms</a></span>
             </li>
           </ul>
         </nav>

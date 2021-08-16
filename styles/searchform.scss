@@ -19,13 +19,16 @@
     width: 1200px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 0 rgb(182, 169, 169), 0 4px 0 #aaa, 0 5px 5px #444;
     padding-bottom: 30px;
+    padding-top: 30px;
+
     margin-bottom: 20px;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
-    
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
     div{
         margin: auto;
         color: #555;
+        
         
     }
     div h2{
@@ -34,6 +37,8 @@
     }
     div p{
         margin-top: 10px;
+        margin-bottom: 10px;
+
         font-size: large;
     }
 

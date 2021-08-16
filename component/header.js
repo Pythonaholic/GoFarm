@@ -17,7 +17,7 @@ function Header() {
         
         <header>
             
-            <a href="/"><img src="https://i.ibb.co/qD6F1Pp/white-s.png" width='120px' alt="" /><h1>GoFarm</h1></a>
+            <a href="/"><img src="https://i.ibb.co/qD6F1Pp/white-s.png" width='120px' alt="" /></a>
             
         </header>
         </div>

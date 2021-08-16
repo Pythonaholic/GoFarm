@@ -63,8 +63,8 @@ function MyFarms() {
         <h2 className='text-center styling'>My Farms</h2>
         <h2 className='text-center styling2'>This is the Control Panel For your Farms, you can Check out your Farms, Delete Them if you want, or add new Farms.</h2>
         <div className="mt-2">
-          <table className="max-w-5xl mx-auto table-auto fontso">
-            <thead className="justify-between">
+          <table className="max-w-5xl mx-auto table-auto fontso ">
+            <thead className="justify-between ">
               <tr className="bg-gray-500">
 
                 <th className="px-16 py-2">
