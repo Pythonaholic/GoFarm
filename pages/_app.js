@@ -9,6 +9,7 @@ import '../styles/form.scss'
 import '../styles/extraformcss.scss'
 import '../styles/sign.scss'
 import '../styles/slider.scss'
+import '../styles/myfarms.scss'
 
 
 

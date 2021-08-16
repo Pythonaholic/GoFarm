@@ -56,60 +56,71 @@ function MyFarms() {
     }
 
     return (
-        <div className='myfarms'>
-<div class="mt-2">
-      <table class="max-w-5xl mx-auto table-auto">
-        <thead class="justify-between">
-          <tr class="bg-green-600">
+        <div className='myfarms m-auto'>
+          <h2 className='text-center styling'>My Farms</h2>
+          <h2 className='text-center styling2'>This is the Control Panel For your Farms, you can Check out your Farms, Delete Them if you want, or add new Farms.</h2>
+<div className="mt-2">
+      <table className="max-w-5xl mx-auto table-auto fontso">
+        <thead className="justify-between">
+          <tr className="bg-gray-500">
 
-            <th class="px-16 py-2">
-              <span class="text-gray-100 font-semibold">Farm Name</span>
+            <th className="px-16 py-2">
+              <span className="text-gray-100 font-semibold">Farm Name</span>
             </th>
-            <th class="px-16 py-2">
-              <span class="text-gray-100 font-semibold">Location</span>
+            <th className="px-16 py-2">
+              <span className="text-gray-100 font-semibold">Location</span>
             </th>
           
-            <th class="px-16 py-2">
-              <span class="text-gray-100 font-semibold">Price</span>
+            <th className="px-16 py-2">
+              <span className="text-gray-100 font-semibold">Price (JD)</span>
             </th>
-            <th class="px-16 py-2">
-              <span class="text-gray-100 font-semibold">Delete</span>
+
+            <th className="px-16 py-2">
+              <span className="text-gray-100 font-semibold">owner</span>
+            </th>
+            
+            <th className="px-16 py-2">
+              <span className="text-gray-100 font-semibold">Delete</span>
             </th>
           </tr>
         </thead>
 
 
-        <tbody class="bg-gray-200">
+        <tbody className="bg-gray-200">
           {
             farms.map(farm=>{
               if(farm.owner == context.user.id){
                 return(
-                  <tr class="bg-white border-b-2 border-gray-200">
+                  <tr className="bg-white border-b-2 border-gray-200">
 
             <td>
-              <form onSubmit={sendToDetailsPage}>
+              <form className='text-center' onSubmit={sendToDetailsPage}>
                 <input type="hidden" name='id' value={farm.id} />
                 <button>
-              <span class="text-center ml-2 font-semibold text-blue-700">{farm.farmName}</span>
+              <span className="text-center ml-2 font-semibold text-blue-700">{farm.farmName}</span>
               </button>
               </form>
             </td>
            
-            <td class="px-16 py-2">
+            <td className="px-16 py-2">
               <span>{farm.location}</span>
             </td>
-            <td class="px-16 py-2">
+            <td className="px-16 py-2">
               <span>{farm.price}</span>
             </td>
 
-            <td class="px-16 py-2">
+            <td className="px-16 py-2">
+              <span>{context.user.first_name}</span>
+            </td>
+
+            <td className="px-16 py-2">
               <form onSubmit={handleDelete}>
                 <input type="hidden" value={farm.id} name='farmid'/>
                 <button>
-              <span class="text-yellow-500 flex">
+              <span className="text-yellow-500 flex">
                  <svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                class="h-5 w-5 text-red-700"
+                                                className="h-5 w-5 text-red-700"
                                                 viewBox="0 0 20 20"
                                                 fill="currentColor"
                                             >
