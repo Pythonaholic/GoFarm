@@ -7,11 +7,6 @@ import '../styles/searchresult.scss'
 import '../styles/form.scss'
 import '../styles/extraformcss.scss'
 import '../styles/sign.scss'
-<<<<<<< HEAD
-import '../styles/slider.scss'
-import '../styles/myfarms.scss'
-
-=======
 import '../styles/detailsinfo.scss'
 import '../styles/rivewcom.scss'
 import '../styles/myfarms.scss'
@@ -19,7 +14,6 @@ import '../styles/header_main.scss';
 import '../styles/main_comp.scss';
 import '../styles/slider_main.scss';
 import toast, { Toaster } from 'react-hot-toast';
->>>>>>> ac27eeaaf0c92e472e222690bef73f876af1fe92
 
 
 function MyApp({ Component, pageProps }) {
