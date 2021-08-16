@@ -1,5 +1,5 @@
 .footer{
-    /* ---------- Colors ----------*/
+  /* ---------- Colors ----------*/
 /* Orange: #E67E22 */
 /* Dark (hover) orange: #D67118 */
 /* Light gray: #F9FAFC */
@@ -10,245 +10,254 @@
 /* -------------------------------------------*/
 html,
 body {
-	font-family: 'Lato', 'Arial', sans-serif;
-	font-weight: 200;
-	color: #555;
-	margin: 0 auto;
+font-family: 'Lato', 'Arial', sans-serif;
+font-weight: 200;
+color: #555;
+margin: 0 auto;
 }
 
 .clearfix {zoom: 1}
 .clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /* -------------------------------------------*/
 /* REUSABLE */
 /* -------------------------------------------*/
 .logo {
-	font-size: 40px;
-	width: auto;
-	color: #E67E22;
+font-size: 40px;
+width: auto;
+color: #E67E22;
+}
+
+.photo{
+width: 200px;
+margin-bottom: -10px;
+
+
+
 }
 
 h1 {
-	font-size: 55px;
-	font-weight: 300;
-	padding-top: 260px;
-  padding-bottom: 4%;
-	word-spacing: 4px;
-	line-height: 1.6;
-	text-align: center;
-  margin: 0 auto;
+font-size: 55px;
+font-weight: 300;
+padding-top: 260px;
+padding-bottom: 4%;
+word-spacing: 4px;
+line-height: 1.6;
+text-align: center;
+margin: 0 auto;
 }
 
 h3 {
-	font-size: 38px;
-	font-weight: 200;
-	text-align: center;
-	padding-top: 80px;
-	margin: 0;
+font-size: 38px;
+font-weight: 200;
+text-align: center;
+padding-top: 80px;
+margin: 0;
 }
 
 h4 {
-	font-size: 20px;
-	font-weight: 200;
+font-size: 20px;
+font-weight: 200;
 }
 
 p {
-	font-size: 20px;
-	color: #555;
+font-size: 20px;
+color: #555;
 }
 
 .btn {
-	color: #FFF;
-	background-color: #E67E22;
-	border: none;
-  border-radius: 200px;
-	padding: 15px 30px;
-	font-size: 18px;
-	font-weight: 200;
+color: #FFF;
+background-color: #E67E22;
+border: none;
+border-radius: 200px;
+padding: 15px 30px;
+font-size: 18px;
+font-weight: 200;
 }
 
 .btn a {
-	text-decoration: none;
-	color: #FFF;
+text-decoration: none;
+color: #FFF;
 }
 
 .btn:hover {
-	color: #FFF;
-	background-color: #D67118;
+color: #FFF;
+background-color: #D67118;
 }
 
 .btn-ghost {
-	margin: 12px auto 6px auto;
-	text-align: center;
-	font-weight: 200;
-	font-size: 16px;
-	width: 160px;
-	padding: 6px 12px;
-  border-radius: 200px;
-	border: 2px solid #E67E22;
-	color: #E67E22;
-	background-color: #FFF;
+margin: 12px auto 6px auto;
+text-align: center;
+font-weight: 200;
+font-size: 16px;
+width: 160px;
+padding: 6px 12px;
+border-radius: 200px;
+border: 2px solid #d60bdd; 
+// obada
+color: #E67E22;
+background-color: #FFF;
 }
 
 .btn-ghost:hover {
-	font-weight: 200px;
-	border: 2px solid #D67118;
-	color: #FFF;
-	background-color: #D67118;
+font-weight: 200px;
+border: 2px solid #D67118;
+color: #FFF;
+background-color: #D67118;
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 1140px;
-	margin: 60px auto 80px auto;
+display: flex;
+flex-wrap: wrap;
+max-width: 1140px;
+margin: 60px auto 80px auto;
 }
 
 /* -------------------------------------------*/
 /* HEADER */
 /* -------------------------------------------*/
 #nav-bar {
-	width: 100%;
-	position: fixed;
-	z-index: 9999;
-	background-color: #FFF;
-	box-shadow: 1px 1px 2px #ccc;
+width: 100%;
+position: fixed;
+z-index: 9999;
+background-color: #FFF;
+box-shadow: 1px 1px 2px #ccc;
 }
 
 #nav-bar div {
-	max-width: 1140px;
-	margin: 0 auto;
+max-width: 1140px;
+margin: 0 auto;
 }
 
 #nav-bar .logo {
-	float: left;
-	margin: 12px auto;
+float: left;
+margin: 12px auto;
 }
 
 .main-nav {
-	list-style: none;
-	float: right;
-	margin: 21px auto;
-  padding-left: 0;
+list-style: none;
+float: right;
+margin: 21px auto;
+padding-left: 0;
 }
 
 .main-nav li {
-	display: inline-block;
-	padding-left: 15px;
-	font-size: 19px;
-	font-weight: 200;
+display: inline-block;
+padding-left: 15px;
+font-size: 19px;
+font-weight: 200;
 }
 
 .main-nav li:nth-child(4) {	word-spacing: 4px; }
 
 .main-nav li a {
-	text-decoration: none;
-	color: #555;
+text-decoration: none;
+color: #555;
 }
 
 .main-nav li a:hover {
-	text-decoration: none;
-	padding-bottom: 5px;
-	border-bottom: 2px solid #D67118;
+text-decoration: none;
+padding-bottom: 5px;
+border-bottom: 2px solid #D67118;
 }
 
 .mobile-nav-icon { display: none; }
 
 /* ---------- HERO SECTION ----------*/
 .hero-container {
-	max-width: 1140px;
-	margin: 0 auto;
-    display: flex;
+max-width: 1140px;
+margin: 0 auto;
+  display: flex;
 /*    min-height: 100vh;*/
-    height: 700px;
+  height: 700px;
 }
 
 .hero-container .outer-div { margin: 0 auto; }
 
 .hero-container img {
-	width: 455px;
- 	height: auto;
+width: 455px;
+ height: auto;
 /*	padding-top: 35%;*/
-	padding-top: 120px;
+padding-top: 120px;
 }
 
 .hero-container .btn {
-  display: block;
-	margin: 0 auto;
+display: block;
+margin: 0 auto;
 }
 
 /* -------------------------------------------*/
 /* BENEFITS SECTION */
 /* -------------------------------------------*/
 .benefits-section {
-	background-color: #222651;
-	margin-top: 0;
-	margin-bottom: 0;
+background-color: #222651;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .benefits-section h3 { color: #FFF; }
 
 .container .outer-div {	margin: 0 auto; }
 
- .container .benefit-listing {
-	display: inline-block;
- 	background-color: #222651;
-	border: 2px solid #E67E22;
-	width: 200px;
-	height: 200px;
-	border-radius: 200px;
-	margin: 0 10px;
+.container .benefit-listing {
+display: inline-block;
+ background-color: #222651;
+border: 2px solid #E67E22;
+width: 200px;
+height: 200px;
+border-radius: 200px;
+margin: 0 10px;
 }
 
 .container div p {
-	line-height: 1.6;
-	text-align: center;
-	margin: auto;
-	padding-top: 8%;
-	width: 150px;
-	color: #fff;
+line-height: 1.6;
+text-align: center;
+margin: auto;
+padding-top: 8%;
+width: 150px;
+color: rgba(255, 255, 255, 0.507);
 }
 
 .container div span {
-	font-size: 35px;
-	color: #E67E22;
-	padding-left: 20px;
+font-size: 35px;
+color: #E67E22;
+padding-left: 20px;
 }
 
 /* -------------------------------------------*/
 /* PRODUCTS SECTION */
 /* -------------------------------------------*/
 .container .product-listing {
-  display: inline-block;
-	max-width: 200px;
-	height: auto;
-	margin: 0 10px;
+display: inline-block;
+max-width: 200px;
+height: auto;
+margin: 0 10px;
 }
 
 .product-listing img {
-  width: 200px;
-	height: auto;
+width: 200px;
+height: auto;
 }
 
 .product-listing h4 {
-	text-align: center;
-	margin: 2px auto;
-	font-weight: 300;
-	font-size: 18px;
-	padding-bottom: 10px;
+text-align: center;
+margin: 2px auto;
+font-weight: 300;
+font-size: 18px;
+padding-bottom: 10px;
 }
 
 .product-listing h4 span {
-	font-weight: 400;
-	font-size: 18px;
-	color: #555;
-	padding-left: 0;
+font-weight: 400;
+font-size: 18px;
+color: #555;
+padding-left: 0;
 }
 
 .btn-ghost { display: block; }
@@ -257,315 +266,325 @@ p {
 /* VIDEO SECTION */
 /* -------------------------------------------*/
 .video-section {
-	background-color: #222651;
-	margin-top: 0;
-	margin-bottom: 0;
+background-color: #222651;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .video-section h3 { color: #FFF; }
 
 .video-section div ul {
-	width: 470px;
-	height: auto;
-	margin: 0;
-  color: #FFF;
+width: 470px;
+height: auto;
+margin: 0;
+color: #FFF;
 }
 
 .video-section div li {
-	font-size: 18px;
-	font-weight: 200;
-	padding-bottom: 15px;
+font-size: 18px;
+font-weight: 200;
+padding-bottom: 15px;
 }
 
 /* -------------------------------------------*/
 /* FOOTER SECTION */
 /* -------------------------------------------*/
 .footer-section {
-	max-width: 1140px;
-	margin: 0 auto;
-	background-color: #FFF;
- 	padding-top: 80px;
-  padding-bottom: 20px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: rgb(255, 255, 255);
+ padding-top: 80px;
+padding-bottom: 20px;
 } 
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
+
+
 
 .footer div { margin: 0 auto; }
 
-.footer .logo { color: #E67E22; }
+.footer .logo { color: #e69822; }
 
 .footer h4 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
 }
 
 .footer ul {
-    list-style: none;
-    text-decoration: none;
-    padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
 }
 
 .social { float: left; }
 
-.social ul li { float: left; }
+.social ul li { float: left;  }
 
 .social ul i {
-    font-size: 30px;
-    color: #555;
-    padding-top: 10px;
-    padding-right: 10px;
-    text-align: center;  
+  font-size: 30px;
+  color: #555;
+  padding-right: 10px;
+  text-align: center;  
+  padding-bottom: 10px;
+  right: 50px;
+  
 }
 
-.social ul i:hover { color: #D67118; }
-
+.social ul i:hover { color: #9a18d6; }
+// obada
 .footer-links ul a {
-    list-style: none;
-    text-decoration: none;
-    color: #555;
-    font-size: 17px; 
-    line-height: 1.5;
+  list-style: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 17px; 
+  line-height: 1.5;
+  
 }
 
-.footer-links ul a:hover { color: #D67118; }
 
-.email-signup { padding-bottom: 40px; }
+.footer-links ul a:hover { color: #a018d6; }
+// obada
+
+.email-signup { padding-bottom: 5px; }
 
 .footer-section form {
-	text-align: left;
-  font-size: 17px;
-  line-height: 1.5;
+text-align: left;
+font-size: 17px;
+line-height: 1.5;
 }
 
 .section-wrapper {
-  min-width: 224px;
-  overflow: hidden;
-  display: inline-block;
-  padding-top: 10px;
-  float: left;
+min-width: 224px;
+overflow: hidden;
+display: inline-block;
+padding-top: 10px;
+float: left;
 }
 
 input[type=email], select, textarea {
-	width: 165px;
-	padding: 8px;
-	padding-left: 20px;
-	border: 1px solid #E67E22;
-	border-radius: 200px 0 0 200px;
-	box-sizing: border-box;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	resize: vertical;
-	font-size: 13px;
-  float: left;
+width: 165px;
+padding: 8px;
+padding-left: 20px;
+border: 1px solid #ee850e;
+border-radius: 200px 0 0 200px;
+box-sizing: border-box;
+margin-top: 4px;
+margin-bottom: 4px;
+resize: vertical;
+font-size: 13px;
+float: left;
 }
 
 .footer-section .btn-ghost {
-	color: #FFF;
-	background-color: #E67E22;
-  margin: 4px 0 4px 0px;
-  border-radius: 0 200px 200px 0;
-  width: 100px;
+color: #FFF;
+background-color: #111110;
+margin: 4px 0 4px 0px;
+border-radius:10px;
+width: 100px;
 }
 
 .footer-section .btn-ghost:hover {
-	color: #FFF;
-	border: 2px solid #D67118;
-	background-color: #D67118;
+color: #FFF;
+border: 2px solid #b80aec;
+background-color: #b618d6;
+// obada
 }
 
 .footer-credit {
-  font-size: 16px;
-  text-align: center;
-	margin: 0 auto;
-	padding-top: 20px;
-  padding-right: 2%;
-  padding-left: 2%;
-	border-top: 2px solid #D67118;
+font-size: 16px;
+text-align: center;
+margin: 0 auto;
+padding-top: 20px;
+padding-right: 2%;
+padding-left: 2%;
+border-top: 2px solid #a018d6; 
+// obada
 }
 
-.footer-credit a { color: #E67E22; }
+.footer-credit a { color: #e97210; }
 
 .footer-credit a:hover,
 .footer-credit a:active {
-  color: #D67118;
+color: #182bd6;
 }
 
 /* -------------------------------------------*/
 /* MEDIA QUERIES */
 /* -------------------------------------------*/
 @media only screen and (max-width:1180px){
-  #nav-bar .logo { margin-left: 20px; }
-    
-  .mobile-nav-icon {
-    margin-right: 20px;
-    padding-right: 0px;
-  }
-    
-  #nav-bar .main-nav { margin-right: 20px; }
-    
-  .video-section .container {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-    
-  .video-section .demo-listing { padding-bottom: 15px; }
+#nav-bar .logo { margin-left: 20px; }
+  
+.mobile-nav-icon {
+  margin-right: 20px;
+  padding-right: 0px;
+}
+  
+#nav-bar .main-nav { margin-right: 20px; }
+  
+.video-section .container {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+  
+.video-section .demo-listing { padding-bottom: 15px; }
 }
 
 @media only screen and (max-width:1060px) {
-  h1 {
-    padding-top: 250px;
-    padding-right: 2%;
-    font-size: 50px;
-  }
-    
-  .hero-container img { width: 400px; }
-    
-  .benefits-section .container { margin-bottom: 50px; }
-    
-  .benefits-section .container .outer-div { padding-bottom: 30px; }
-    
-  .products-section .container { margin-bottom: 40px; }
-    
-  .products-section .container .outer-div { padding-bottom: 40px; }
-    
-  .video-section .container { margin-bottom: 65px; }
-    
-  .video-section div ul { max-width: 460px; }
+h1 {
+  padding-top: 250px;
+  padding-right: 2%;
+  font-size: 50px;
+}
+  
+.hero-container img { width: 400px; }
+  
+.benefits-section .container { margin-bottom: 50px; }
+  
+.benefits-section .container .outer-div { padding-bottom: 30px; }
+  
+.products-section .container { margin-bottom: 40px; }
+  
+.products-section .container .outer-div { padding-bottom: 40px; }
+  
+.video-section .container { margin-bottom: 65px; }
+  
+.video-section div ul { max-width: 460px; }
 }
 
 @media only screen and (max-width:815px) {
-  .hero-container { max-height: 600px; }
-    
-  h1 {
-    padding-top: 220px;
-    font-size: 40px;
-  }
-    
-  .hero-container img { width: 350px; }
+.hero-container { max-height: 600px; }
+  
+h1 {
+  padding-top: 220px;
+  font-size: 40px;
+}
+  
+.hero-container img { width: 350px; }
 }
 
 @media only screen and (max-width:725px) {
-  .mobile-nav-icon {
-    margin-right: 20px;
-    padding-right: 0px;
-  }
-    
-  .hero-container img { display: none; }
-    
-  .hero-container {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(https://www.stack3d.com/wp-content/uploads/2017/07/organic-bone-broth-protein.jpg);
-		background-position: right;
-		background-size: cover;
-    max-height: 500px;
-  }
-    
-  h1 {
-    padding-top: 180px;
-    padding-left: 2%;
-    font-weight: 300;
-    font-size: 45px;
-  } 
-    
-  h3 {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-    
-  .social {
-    padding-left: 2%;
-    padding-right: 30px;
-  }
-    
-  .footer-links { padding-right: 30px; }
-    
-  .email-signup { padding-right: 2%; }
+.mobile-nav-icon {
+  margin-right: 20px;
+  padding-right: 0px;
+}
+  
+.hero-container img { display: none; }
+  
+.hero-container {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(https://www.stack3d.com/wp-content/uploads/2017/07/organic-bone-broth-protein.jpg);
+  background-position: right;
+  background-size: cover;
+  max-height: 500px;
+}
+  
+h1 {
+  padding-top: 180px;
+  padding-left: 2%;
+  font-weight: 300;
+  font-size: 45px;
+} 
+  
+h3 {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+  
+.social {
+  padding-left: 2%;
+  padding-right: 30px;
+  
+}
+  
+.footer-links { padding-right: 30px; }
+  
+.email-signup { padding-right: 2%; }
 }
 
 @media only screen and (max-width:600px) {
-  .hero-container { min-height: 450px; }
-    
-  h1 {
-    padding-top: 190px;
-    font-size: 40px;
-  } 
-    
-  h3 { font-size: 32px; }
-    
-  #video {
-    width: 330px;
-    height: 180px;
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-    
-  .video-section div ul { width: 320px; }
-    
-  .video-section div ul li {
-    width: 300px;
-    font-size: 17px;
-  }
+.hero-container { min-height: 450px; }
+  
+h1 {
+  padding-top: 190px;
+  font-size: 40px;
+} 
+  
+h3 { font-size: 32px; }
+  
+#video {
+  width: 330px;
+  height: 180px;
+  padding-right: 2%;
+  padding-left: 2%;
 }
-    
+  
+.video-section div ul { width: 320px; }
+  
+.video-section div ul li {
+  width: 300px;
+  font-size: 17px;
+}
+}
+  
 @media only screen and (max-width:524px) {
-	.mobile-nav-icon {
-		display: block;
-		font-size: 25px;
-		text-align: right;
-		padding-top: 15px;
-	}
-	
-	#nav-bar .main-nav {
-		margin-right: 0;
-		padding-right: 0;
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-	
-  .main-nav { 
-    display: none; 
-    position: absolute;
-    width: 100%;
-    right: 0;
-    top: 32px;
-    background-color: #FFF;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    text-align: center;
-    box-shadow: 0 3px 2px -2px rgba(214, 113, 24, 0.3);
-  }
+.mobile-nav-icon {
+  display: block;
+  font-size: 25px;
+  text-align: right;
+  padding-top: 15px;
+}
 
-  .main-nav li {
-    font-size: 19px;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0;
-    background-color: #FFF;
-    margin: 0 auto;
-  }
+#nav-bar .main-nav {
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
-  .main-nav li:hover a {
-    text-decoration: none;
-    padding-bottom: 5px;
-    margin: 0 auto;
-    color: #FFF;
-  }
+.main-nav { 
+  display: none; 
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 32px;
+  background-color: #FFF;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  text-align: center;
+  box-shadow: 0 3px 2px -2px rgba(214, 113, 24, 0.3);
+}
 
-  .main-nav li:hover { background-color: #D67118; }    
+.main-nav li {
+  font-size: 19px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+.main-nav li:hover a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.main-nav li:hover { background-color: #D67118; }    
 }
 
 @media only screen and (max-width:400px) {
-  .hero-container { min-height: 400px; }
+.hero-container { min-height: 400px; }
 
-  h1 {
-    padding-top: 200px;
-    font-size: 35px;
-  }    
+h1 {
+  padding-top: 200px;
+  font-size: 35px;
+}    
 }
 }

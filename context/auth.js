@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import cookie from 'react-cookies';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 const API = 'https://gofarm-api.herokuapp.com/api/token/'; //process.env.API_SERVER;
 // const SECRET = 'SECRET_KEY'; //process.env.JWT_SECRET;
 
@@ -23,10 +24,10 @@ function SettingsProvider(props) {
     try {
 
       const id = await jwt.decode(token).user_id;
-      const config = { headers: { Authorization: 'Bearer ' + token} };
+
       const userData = await axios.get(
-        `https://gofarm-api.herokuapp.com/accounts/${id}`,
-        config
+        `https://gofarm-api.herokuapp.com/accounts/${id}`
+
       );
 
       setLoginState(true, token, userData.data);
@@ -48,19 +49,35 @@ function SettingsProvider(props) {
         username,
         password,
       };
-    
+
       const response = await axios.post(API, data);
-    
+
       validateToken(response.data.access);
+      toast.success(`Login Success`)
+
     } catch (error) {
+      toast.error(`Either username or password are wrong`)
       console.error('Signin Error', error.message);
+
     }
   };
   const logout = () => {
     setLoginState(false, null, {});
   };
   const signup = async userInfo => {
-    await axios.post('https://gofarm-api.herokuapp.com/accounts/signup/',userInfo)
+    try {
+
+      const b = await axios.post('https://gofarm-api.herokuapp.com/accounts/signup/', userInfo)
+
+      toast.success(`Singup success`)
+     
+    } catch(error){
+
+      toast.error(`Username already exists`)
+      console.error('Signup Error', error.message);
+
+    }
+    
   }
   const state = {
     loggedIn,
