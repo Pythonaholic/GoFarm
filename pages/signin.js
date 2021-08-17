@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../component/head';
 import SignupOrIn from '../component/sign'
 import Footer from '../component/footer'
 import { SettingsContext } from '../context/auth';
@@ -18,6 +19,8 @@ function Signin() {
         <div className="tex">
 
           <Header/>
+      <Head/>
+
           <Nav /> 
           <SignupOrIn />
           <Footer />  
