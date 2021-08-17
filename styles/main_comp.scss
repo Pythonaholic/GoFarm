@@ -1,8 +1,6 @@
 /* BREAKPOINT MIXINS */
 .main_component {
-  // margin-top: 59px;
-  // padding-top: 50px;
-  // width: 1200px;
+
   
     @mixin bp-small {
       @media (min-width: 480px) {

@@ -15,6 +15,7 @@ import '../styles/main_comp.scss';
 import '../styles/slider_main.scss';
 import '../styles/video_main.scss';
 import '../styles/headerbar.scss';
+import '../styles/about.scss';
 
 
 import toast, { Toaster } from 'react-hot-toast';

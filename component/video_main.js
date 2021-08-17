@@ -8,7 +8,7 @@ function Video() {
           {/* Video from coverr.co */}
           <video className="video-bg" autoPlay muted loop>
             <source
-              src="https://thumbs.gfycat.com/GoodnaturedElectricChihuahua-mobile.mp4"
+              src="https://thumbs.gfycat.com/SoreHeavyGalapagospenguin-mobile.mp4"
               type="video/mp4"
             />
           </video>

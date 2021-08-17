@@ -1,4 +1,5 @@
 .about{
+  margin-top: 59px;
     @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
   -webkit-animation: fa-spin-fast 0.2s infinite linear;
@@ -1239,15 +1240,16 @@
 }
 body {
   background-color: #f9f9f9;
-  color:black;
+  color:white;
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   font-size: 16px;
 }
 h1,
 h2,
-h3 {
+h3,p {
   font-weight: 200;
+  color: white;
 }
 .row1{
   display: flex;

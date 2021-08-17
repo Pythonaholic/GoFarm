@@ -10,12 +10,12 @@ import Video from './video_main';
 import Footer from './footer';
 function Main() {
   return (
-    <div>
+    <div className="allmain">
 
 {/* <Slider /> */}
 
 
-<Video />
+      <Video />
 
 
 
