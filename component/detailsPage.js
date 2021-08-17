@@ -317,7 +317,7 @@ function DetailsPage() {
 
 
 
-                    <If condition={context.loggedIn}>
+                    <If condition={context.loggedIn && (owner.id !=context.user.id)}>
                         <Then>
                             <div id="pizza">
                                 <form onSubmit={comminethandler}>
