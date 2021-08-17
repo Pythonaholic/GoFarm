@@ -7,12 +7,21 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "bourbon": "^7.0.0",
+    "cjs": "0.0.11",
+    "jquery": "^3.6.0",
+    "jsonwebtoken": "^8.5.1",
     "next": "latest",
-    "node-sass": "^6.0.1",
+    "node-sass": "^4.12.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-cookies": "^0.1.1",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.0",
+    "react-if": "^4.0.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"

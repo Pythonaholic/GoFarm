@@ -1,0 +1,263 @@
+.rivew{
+  
+    article, aside, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,600);
+
+a {
+    color: #6d84b4;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    font: 16px/1.4 Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+section {
+
+    
+    background: rgba(255,255,255,0.9);
+
+    padding-right: 85px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    margin-top: -20px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+
+
+    
+}
+
+.comment {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 1em;
+    margin-left: 40px;
+    *zoom: 1;
+    width: 100%;
+}
+
+.comment h2{
+  margin-top:5px;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.comment button{
+  background-color: rgb(153, 6, 6);
+  margin-bottom: 5px;
+}
+
+.comment-img {
+    float: left;
+    margin-right: 33px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.comment-img img { display: block }
+
+.comment-body { overflow: hidden }
+
+.comment .text {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.comment .text p:last-child { margin: 0 }
+
+.comment .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.comments, .comment { position: relative }
+
+.comments:before, .comment:before, .comment .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+.comments:before {
+    width: 3px;
+    left: 105px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.1);
+}
+
+.comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 16px 0 0 -6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+    background: #ccc;
+}
+
+.comment:hover {
+    /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */ 
+    cursor: cell; /* This line is for the cursor */
+}
+
+.comment:hover:before { background: #3b5998 }
+
+.comment .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    
+}
+
+// ---------------------------------------------------------------
+
+
+* {
+  outline:none;
+}
+
+#pizza {
+
+  
+  width:1200px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  margin: auto;
+
+  box-sizing:border-box;
+  padding: 24px 30px 14px 30px;
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+ 
+
+}
+textarea {
+  box-sizing:border-box;
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  border-radius:4px;
+  border:none;
+  height:100px;
+
+  border: 1px #eee solid;
+  padding:8px;
+  font-size:14px;
+  color:#444;
+  font-family: 'Courier New', 'Courier', monospace;
+  transition: box-shadow 0.2s ease;
+  background: white;
+}
+a.button input{
+  margin-top:10px;
+  border:none;
+  margin-right:10px;
+  display: block;
+  float:left;
+  background-color: #1B79C7;
+  line-height: 1;
+  padding: 6px 20px 6px 20px;
+  color: white;
+  text-shadow: 0px -1px 0px #0C3658;
+  border-radius: 4px;
+  box-shadow: 0px 3px 0px #0C3658, 0px 5px 3px rgb(112, 65, 17);
+  transition: background-color 0.1s ease;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  font-size:14px;
+  text-decoration: none !important;
+  position: relative;
+  user-select: none;
+}
+button ,input{
+    margin-top:10px;
+  border:none;
+  margin-right:10px;
+  display: block;
+  float:left;
+  background-color: #26a9ca;
+  line-height: 1;
+  padding: 6px 20px 6px 20px;
+  color: white;
+  text-shadow: 0px -1px 0px #0C3658;
+  border-radius: 4px;
+  box-shadow: 0px 3px 0px #0C3658, 0px 5px 3px rgb(112, 65, 17);
+  transition: background-color 0.1s ease;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  font-size:14px;
+  text-decoration: none !important;
+  position: relative;
+  user-select: none;
+}
+
+button{
+  float: right;
+  width: 100px;
+  padding: 10px;
+}
+input{
+  background-color: white;
+  color: black;
+  width: 150px;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/paper_fibers.png);
+  box-shadow: none;
+  border-radius:4px;
+
+  
+}
+.button:hover{
+  background-color: #d60bdd;
+}
+.button:active {  
+  bottom: -2px;
+  box-shadow: 0px 1px 0px #0C3658, 0px 1px 3px rgb(112, 65, 17);
+  color: white;
+}
+#hamburger {
+
+  width:1200px;
+  margin:0;
+  margin: auto;
+  box-sizing:border-box;
+  padding: 20px 30px 20px 30px;
+  border-radius:0 0 8px 8px;
+  background-color:#444;
+  border:1px solid #444;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
+  color:#FFF;
+  text-shadow:0px 1px 2px #000;
+  font-size:14px;
+}
+
+#pizza:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#table a {
+  color:#FFF;
+  text-decoration:underline;
+}
+}

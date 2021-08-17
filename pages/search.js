@@ -5,21 +5,25 @@ import { useState } from 'react';
 import { FarmsContext } from '../context/farms'; //2
 import { stringify } from 'postcss';
 import Footer from '../component/footer';
-import Main from '../component/main';
+import SearchForm from '../component/searchForm';
 import Nav from '../component/nav';
-import Main_component from '../component/main-comp';
 import Header from '../component/header';
 
-export default function Home() {
-  const context = useContext(SettingsContext); //4
-  const farmsListContext = useContext(FarmsContext); //5
+
+
+export default function Search() {
+
+  const context = useContext(SettingsContext);
+  const farmsListContext = useContext(FarmsContext)
+
 
   return (
     <div className="tex">
-          <Header/>
+      <Header />
       <Nav />
-      <Main />
+      <SearchForm />
       <Footer />
-     </div>
-  )
+    </div>
+  );
+
 }
