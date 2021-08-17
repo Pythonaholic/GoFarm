@@ -3,11 +3,15 @@
   width:100vh;
   display: block;
   margin: auto;
+  
 
 *, *:after, *:before {
   box-sizing: border-box;
 }
+.back{
+  background-color: rgb(253, 251, 247);
 
+}
 
 body {
   font-family: "DM Sans", sans-serif;
