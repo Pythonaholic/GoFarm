@@ -6,78 +6,68 @@ import { useEffect } from 'react';
 import Nav from './nav';
 import Main_component from './main-comp';
 import Slider from './slider_main';
+import Video from './video_main';
 import Footer from './footer';
 function Main() {
-  // selected elements
-  useEffect(() => {
-    // selected elements
-    var navTrigger = document.getElementById('nav-trigger');
-    var nav = document.getElementById('nav');
-    var header = document.getElementById('header');
-    var heading = document.getElementById('heading');
-    var labels = document.getElementsByClassName('nav-label');
-
-    // sizing
-    var windowHeight = window.innerHeight;
-    var windowWidth = window.innerWidth;
-    var fontSize = windowHeight * 0.1;
-    var headingSize = windowWidth * 0.1;
-
-    // Event Listening
-    // navTrigger.addEventListener('click', navToggle);
-    window.addEventListener('resize', resize);
-
-    function resize() {
-      windowHeight = window.innerHeight;
-      windowWidth = window.innerWidth;
-      fontSize = windowHeight * 0.1;
-      headingSize = windowWidth * 0.1;
-      if (headingSize > windowHeight * 0.3) headingSize = windowHeight * 0.3;
-
-      for (var i = 0; i < labels.length; i++) {
-        labels[i].style.fontSize = fontSize + 'px';
-        labels[i].style.height = fontSize + 'px';
-        labels[i].style.marginTop = '-' + fontSize * 0.6 + 'px';
-      }
-
-      header.style.height = windowHeight + 'px';
-      heading.style.fontSize = headingSize + 'px';
-      heading.style.height = headingSize + 'px';
-      heading.style.marginTop = '-' + headingSize * 0.6 + 'px';
-    }
-
-    window.onload = resize;
-  }, []);
   return (
-    <div>
-      <Nav />
+    <div className="allmain">
+
+{/* <Slider /> */}
+
+
+      <Video />
+
+
 
       <div className="nav-component">
-        <section id="header" className="header">
-          <h1 id="heading">GoFarm</h1>
-        </section>
         <section className="content">
-          <p>
-            We are going aerial pingpong no dramas as cross as a mickey mouse
-            mate. Flat out like a bities no dramas as cross as a wobbly. Mad as
-            a bush bash as dry as a kindie. As stands out like ford also grab us
-            a chuck a sickie. Built like a moolah bloody khe sanh. Get a dog up
-            ya chokkie how as cunning as a garbo. Lets get some show pony flamin
-            lets throw a roadie. Come a sheila to come a cab sav.
-          </p>
+          <h1 className="styling ">Go-Farm</h1>
+          <p className="styling2 ">
+            Because We Care About Entertainment We Will Let You Discover Nearby
+            Farms , With One Click On Our Web-App You Can Reach Out All Farms In
+            Jordan , To Enjoy With Your Family and lovely Moments , Gathering ,
+            Watching Sunset with Sipping A Cup Of Coffee .<br></br>
+            And If You are Looking For Place For Your Special Day , You Are In
+            The Right Place So welcome Here .
+            <br /> <br />
+            <strong>So, why should you rent a farm?</strong> 
+            <br />
+            Renting a farm would provide you with a space to do various activities,
+            maybe if you are newly married and you're looking for a place to spend your honeymoon,
+            or just you want to go and rest for a couple of days in a non-stress environment, farms have all of that 
+            and more, you can relax, maybe go swimming, go explore the nature, set up a camp fire, or just BBQ. 
+            farms are suitable for families vacations and other social activities. So, what are you waiting for, start
+            searching for farms and rent one now. 
 
-          <p></p>
-          <p className="credit">
-            {/* This placeholder text is from{' '} */}
-            <a href=""></a>
           </p>
         </section>
       </div>
       <div>
-        <Main_component />
       </div>
+<Main_component />
+
+      <div className="nav-component">
+        <section className="content">
+          <h1 className="styling ">Our Vision</h1>
+          <p className="styling2 ">
+            believing in the effects of relaxing and taking a vacation, 
+            and wanting to give back to society by publishing farms all around jordan, 
+            we aim to achieve sustainable growth to add more places, we have
+            established a vision with clear goals:
+            <br></br> <br></br>
+            👉 Profit: Maximizing return to share owners while being mindful of
+            our overall responsibilities.
+            <br></br> <br></br>
+            👉 People: Being able to Find a great place where people are
+            inspired to be the best they can be.
+            <br></br> <br></br>
+            👉 Portfolio: Bringing to the world a portfolio of local farms that
+            anticipate and satisfy peoples; desires and needs.
+          </p>
+        </section>
+      </div>
+
       <div>
-        <Slider />
       </div>
     </div>
   );

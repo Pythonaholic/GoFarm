@@ -3,9 +3,14 @@
   width:100vh;
   display: block;
   margin: auto;
+  
 
 *, *:after, *:before {
   box-sizing: border-box;
+}
+.back{
+  background-color: rgb(253, 251, 247);
+
 }
 
 body {
@@ -13,6 +18,7 @@ body {
   line-height: 1.5;
   background-color: #f1f3fb;
   padding: 0 2rem;
+  
 }
 
 img {

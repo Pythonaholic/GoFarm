@@ -1,14 +1,55 @@
+.allsearch{
+    margin-top: 59px;
+    padding-top: 50px;
+}
 .searchForm{
-body {
+
+
+
+
     background:white;
-    font: 12px Lucida sans, Arial, Helvetica, sans-serif;
-      color: #333;
-      text-align: center;
-  }
+    // font: 12px Lucida sans, Arial, Helvetica, sans-serif;
+    font-family: 'Trocchi', serif;
+
+    color: #333;
+    text-align: center;
+
+    border-radius: 5px;
+    margin: auto;
+    width: 1200px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 0 rgb(182, 169, 169), 0 4px 0 #aaa, 0 5px 5px #444;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    margin-bottom: 20px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    div{
+        margin: auto;
+        color: #555;
+        
+        
+    }
+    div h2{
+     
+        font-size: xx-large;
+    }
+    div p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        font-size: large;
+    }
+
+    
+
   
   a {
       color: #2A679F;
   }
+
+  
 
 
   .form-wrapper {
@@ -26,31 +67,36 @@ body {
       -moz-border-radius: 10px;
       border-radius: 10px;
       -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-      -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-      box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-      margin: 100px auto;
+      -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 0 #bbb, 0 4px 0 rgb(0, 0, 0), 0 5px 5px rgb(8, 0, 0);
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 0 rgb(182, 169, 169), 0 4px 0 #aaa, 0 5px 5px #444;
+      margin: 0 auto;
+      margin-bottom: 10px;
       overflow: hidden;
-      padding: 8px;
-      width: 450px;
+      padding: 20px;
+      width: 550px;
   }
   
   .form-wrapper #search {
-      border: 1px solid #CCC;
+    border: 1px solid;
+    border-color: #d60bdd ;
+    //   border: 1px solid #CCC;
       -webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
       -moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
       box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
       -webkit-border-radius: 3px;
+      
       -moz-border-radius: 3px;
       border-radius: 3px;
     color: #999;
       float: left;
+    
       font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
       padding: 10px;
       width: 320px;
   }
   
   .form-wrapper #search:focus {
-      border-color: #aaa;
+      border-color: #d60bdd;
       -webkit-box-shadow: 0 1px 1px #bbb inset;
       -moz-box-shadow: 0 1px 1px #bbb inset;
       box-shadow: 0 1px 1px #bbb inset;
@@ -63,16 +109,17 @@ body {
       color: #999;
       font-weight: normal;
   }
-  
+
+
   .form-wrapper #submit {
-      background-color: #0483a0;
+      background-color: #26a9ca;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
       background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
       background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
       background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
       background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
       background-image: linear-gradient(top, #31b2c3, #0483a0);
-      border: 1px solid #00748f;
+      border: 1px solid #f5f5f5;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -85,14 +132,14 @@ body {
       float: right;
       font: 15px Arial, Helvetica;
       padding: 0;
+      font-weight: bolder;
       text-transform: uppercase;
       text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
       width: 100px;
   }
   
-  .form-wrapper #submit:hover,
-  .form-wrapper #submit:focus {
-      background-color: #31b2c3;
+  .form-wrapper #submit:hover {
+      background-color: #d60bdd;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#0483a0), to(#31b2c3));
       background-image: -webkit-linear-gradient(top, #0483a0, #31b2c3);
       background-image: -moz-linear-gradient(top, #0483a0, #31b2c3);
