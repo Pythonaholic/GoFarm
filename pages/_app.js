@@ -13,6 +13,7 @@ import '../styles/myfarms.scss'
 import '../styles/header_main.scss';
 import '../styles/main_comp.scss';
 import '../styles/slider_main.scss';
+import '../styles/about.scss'
 import toast, { Toaster } from 'react-hot-toast';
 
 
