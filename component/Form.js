@@ -41,44 +41,44 @@ function Form() {
     return (
         <div className='formcss'>
             <div className="container m-auto justify-center items-center">
-        <div className="card flex">
+        <div className="card flex back">
           <div className="card-image">	
             <h2 className="card-heading ">
                <span className='text-gray-700'> Add a Farm </span>
               <small className='text-gray-700 font-bold'>Add your Farm now to Gain more Profit</small>
             </h2>
           </div>
-          <form className="card-form" onSubmit = {submitHandler}>
+          <form className="card-form back" onSubmit = {submitHandler}>
             <div className="input">
               <input type="text" className="input-field" name='farmName' required />
-              <label className="input-label">Farm name</label>
+              <label className="input-label"><strong>Farm name</strong></label>
             </div>
             <div className="input">
               <input type="number" className="input-field" name = 'price' required />
-              <label className="input-label">Price per day</label>
+              <label className="input-label"><strong>Price per day</strong></label>
             </div>
             <div className="input">
               <input type="text" className="input-field" name='description' required />
-              <label className="input-label">Description</label>
+              <label className="input-label"><strong>Description</strong></label>
             </div>
 
 
 
             <div className="input">
               <input type="text" className="input-field" name='image1' required />
-              <label className="input-label">Image 1 URL</label>
+              <label className="input-label"><strong>Image 1 URL</strong></label>
             </div>
             <div className="input">
               <input type="text" className="input-field" name='image2' required />
-              <label className="input-label">Image 2 URL</label>
+              <label className="input-label"><strong>Image 2 URL</strong></label>
             </div>
             <div className="input">
               <input type="text" className="input-field" name='image3' required />
-              <label className="input-label">Image 3 URL</label>
+              <label className="input-label"><strong>Image 3 URL</strong></label>
             </div>
             <div className="input">
               <input type="text" className="input-field" name='image4' required />
-              <label className="input-label">Image 4 URL</label>
+              <label className="input-label"><strong>Image 4 URL</strong></label>
             </div>
 
 
