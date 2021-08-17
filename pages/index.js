@@ -20,6 +20,6 @@ export default function Home() {
       <Nav />
       <Main />
       <Footer />
-    </div>
-  );
+     </div>
+  )
 }

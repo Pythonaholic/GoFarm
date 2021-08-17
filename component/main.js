@@ -14,7 +14,9 @@ function Main() {
 
 {/* <Slider /> */}
 
-<Main_component />
+
+<Video />
+
 
 
       <div className="nav-component">
@@ -27,25 +29,39 @@ function Main() {
             Watching Sunset with Sipping A Cup Of Coffee .<br></br>
             And If You are Looking For Place For Your Special Day , You Are In
             The Right Place So welcome Here .
+            <br /> <br />
+            <strong>So, why should you rent a farm?</strong> 
+            <br />
+            Renting a farm would provide you with a space to do various activities,
+            maybe if you are newly married and you're looking for a place to spend your honeymoon,
+            or just you want to go and rest for a couple of days in a non-stress environment, farms have all of that 
+            and more, you can relax, maybe go swimming, go explore the nature, set up a camp fire, or just BBQ. 
+            farms are suitable for families vacations and other social activities. So, what are you waiting for, start
+            searching for farms and rent one now. 
+
           </p>
         </section>
       </div>
       <div>
       </div>
-      <Video />
+<Main_component />
+
       <div className="nav-component">
         <section className="content">
           <h1 className="styling ">Our Vision</h1>
           <p className="styling2 ">
-            • To achieve sustainable growth to add more places, we have
+            believing in the effects of relaxing and taking a vacation, 
+            and wanting to give back to society by publishing farms all around jordan, 
+            we aim to achieve sustainable growth to add more places, we have
             established a vision with clear goals:
-            <br></br>
-            •Profit: Maximizing return to share owners while being mindful of
+            <br></br> <br></br>
+            👉 Profit: Maximizing return to share owners while being mindful of
             our overall responsibilities.
-            <br></br>• People: Being able to Find a great place where people are
+            <br></br> <br></br>
+            👉 People: Being able to Find a great place where people are
             inspired to be the best they can be.
-            <br></br>
-            •Portfolio: Bringing to the world a portfolio of local farms that
+            <br></br> <br></br>
+            👉 Portfolio: Bringing to the world a portfolio of local farms that
             anticipate and satisfy peoples; desires and needs.
           </p>
         </section>

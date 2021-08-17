@@ -6,7 +6,7 @@
     width: 100vh;
 
     .styling{
-        color: white;
+        color: rgb(255, 255, 255);
          font-family: 'Trocchi', serif;
           font-size: 45px;
            font-weight: normal;
@@ -26,5 +26,9 @@
         font-family: 'Source Sans Pro', sans-serif;
         color: #4d4343;
         font-weight: bold;
+    }
+    th{
+        // background: rgb(0,108,255);
+        background: rgb(122, 138, 163);
     }
 }

@@ -19,3 +19,6 @@ function Video() {
 }
 
 export default Video;
+
+// width: 100%;
+// height: 120vh;
