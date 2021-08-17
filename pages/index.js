@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from '../component/head';
 import { SettingsContext } from '../context/auth'; //1
 import React, { useContext } from 'react'; //3
 import { useState } from 'react';
@@ -16,7 +16,10 @@ export default function Home() {
 
   return (
     <div className="tex">
-          <Header/>
+
+      <Header/>
+      <Head/>
+
       <Nav />
       <Main />
       <Footer />

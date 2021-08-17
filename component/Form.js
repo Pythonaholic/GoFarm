@@ -26,11 +26,7 @@ function Form() {
     }
     console.log(data)
     farmsListContext.addFarm(data)
-    setTimeout(() => {
-
-      // window.location.href = `/addFarm`;
-
-  }, 10000);
+    
   }
 
 
@@ -40,12 +36,12 @@ function Form() {
   
     return (
         <div className='formcss'>
-            <div className="container m-auto justify-center items-center">
-        <div className="card flex back">
+            <div className="container items-center justify-center m-auto">
+        <div className="flex card back">
           <div className="card-image">	
             <h2 className="card-heading ">
                <span className='text-gray-700'> Add a Farm </span>
-              <small className='text-gray-700 font-bold'>Add your Farm now to Gain more Profit</small>
+              <small className='font-bold text-gray-700'>Add your Farm now to Gain more Profit</small>
             </h2>
           </div>
           <form className="card-form back" onSubmit = {submitHandler}>
