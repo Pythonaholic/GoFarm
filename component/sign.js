@@ -74,7 +74,7 @@ function SignupOrIn() {
       return (
           <div className='signup'>
     
-    <body className='body'>
+    <body className='bodylogin'>
     
     <main id="index" className="with-hover mains">
         <aside>

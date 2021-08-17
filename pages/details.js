@@ -6,18 +6,25 @@ import { FarmsContext } from '../context/farms'; //2
 import { stringify } from 'postcss';
 import Footer from '../component/footer';
 import DetailsPage from '../component/detailsPage';
+import Nav from '../component/nav';
+import Header from '../component/header';
+
+
+
 
 export default function Search() {
-  
-  const context = useContext(SettingsContext); 
-  const farmsListContext = useContext(FarmsContext) 
-  
-    
-  return(  
-      <div>
-         <DetailsPage />
-         <Footer />
-      </div>
+
+  const context = useContext(SettingsContext);
+  const farmsListContext = useContext(FarmsContext)
+
+
+  return (
+    <div className="tex">
+      <Header />
+      <Nav />
+      <DetailsPage />
+      <Footer />
+    </div>
   );
 
 }

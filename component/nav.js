@@ -3,6 +3,8 @@ import { SettingsContext } from '../context/auth';
 import { FarmsContext } from '../context/farms';
 import { useContext } from 'react';
 import { useEffect } from 'react';
+import { If, Else, Then } from 'react-if';
+
 
 function Nav() {
   const context = useContext(SettingsContext);
@@ -48,10 +50,32 @@ function Nav() {
       }
     }
 
+   
+
     window.onload = resize;
   }, []);
-  return (
-    <div className="nav-component">
+
+  function logouthandler(e){
+    e.preventDefault();
+    context.logout()
+    
+    setTimeout(() => {
+
+      window.location.href = `/`;
+
+  }, 500);
+    
+  }
+
+  function loginhandler(e){
+    e.preventDefault();
+    
+      window.location.href = `/signin`;
+    
+  }
+  if(context.loggedIn){
+    return (
+      <div className="nav-component">
       <div className="header-main">
         <div id="nav-trigger" className="nav-trigger open">
           <span className="line" />
@@ -61,25 +85,55 @@ function Nav() {
         <nav id="nav" className="out">z
           <ul>
             <li>
-              <span className="nav-label">Home</span>
+              <span class="nav-label"><form onSubmit={logouthandler}><button>Logout</button></form></span>
             </li>
             <li>
-              <span className="nav-label">About</span>
+              <span className="nav-label"><a href='/'>Home</a></span>
             </li>
             <li>
-              <span className="nav-label">add Farm</span>
+              <span className="nav-label"><a href='/search'>Search</a></span>
             </li>
             <li>
-              <span className="nav-label">Blog</span>
-            </li>
-            <li>
-              <span className="nav-label">Contact</span>
+              <span className="nav-label"><a href='/myfarm'>My Farms</a></span>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-  );
+      
+    );
+  }else{
+    return (
+      <div className="nav-component">
+      <div className="header-main">
+        <div id="nav-trigger" className="nav-trigger open">
+          <span className="line" />
+          <span className="line" />
+          <span className="line" />
+        </div>
+        <nav id="nav" className="out">
+          <ul>
+            <li>
+              <span class="nav-label"><form onSubmit={loginhandler}><button>Login</button></form></span>
+            </li>
+            <li>
+              <span className="nav-label"><a href='/'>Home</a></span>
+            </li>
+            <li>
+              <span className="nav-label"><a href='/search'>Search</a></span>
+            </li>
+            <li>
+            <span className="nav-label"><a href='/about'>About us</a></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+      
+    );
+    
+  }
+  
 }
 
 export default Nav;
