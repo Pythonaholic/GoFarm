@@ -82,7 +82,7 @@ function Nav() {
           <span className="line" />
           <span className="line" />
         </div>
-        <nav id="nav" className="out">z
+        <nav id="nav" className="out">
           <ul>
             <li>
               <span class="nav-label"><form onSubmit={logouthandler}><button>Logout</button></form></span>
