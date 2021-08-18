@@ -7,6 +7,10 @@
 
 }
 .info{
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+  
     /* fonts  */
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 
@@ -19,14 +23,13 @@ body {
 
 #container{
 
-	background: rgba(255, 255, 255, 0.90);
+  background-color:#f5b2b2d9 ;
 	text-align: center;
 	border-radius: 10px 10px 0px 0px;
 	overflow: hidden;
 	margin: auto;
 	height: 500px;
 	width: 1200px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXiNpeiKXNak8XmNXxPhrSRMJ7RSwttDJNg&usqp=CAU");
 	
 }
 
@@ -46,11 +49,11 @@ body {
 
 /* 	Product Name */
 #container .product-details h1{
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Caveat', cursive;
 	display: inline-block;
 	position: relative;
-	font-size: 25px;
-	color: #344055;
+	font-size: 30px;
+	color: #222;
 	margin: 0;
 	
 }
@@ -68,7 +71,7 @@ ul li{
 	transform: translate(70px, 1px);
 	font-family: 'Farsan', cursive;
 	display: inline-block;
-	background: #31b2c3;
+	background: #FFBF86;
 	border-radius: 5px;
 	font-size: 14px;
 	padding: 5px;
@@ -97,10 +100,11 @@ ul li{
 /* The most important information about the product */
 #container .product-details > p {
 	font-family: 'Farsan', cursive;
+  font-weight: bold;
 	text-align: left;
 	font-size: 20px;
   margin-top: 40px;
-	color: #7d7d7d;
+	color: #222;
 	
 }
 
@@ -250,7 +254,7 @@ ul li{
   
     // Box checked
     &:checked + label:before {
-      background: #31b2c3;
+      background: #FFBF86;
     }
     
     // Disabled state label.

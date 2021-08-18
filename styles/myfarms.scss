@@ -4,18 +4,23 @@
 }
 .myfarms{
     width: 100vh;
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
     .styling{
         color: rgb(255, 255, 255);
-         font-family: 'Trocchi', serif;
+        font-family: 'Caveat', cursive;
+
           font-size: 45px;
            font-weight: normal;
             line-height: 48px;
             margin: 40px 0px;
     }
     .styling2{
+    font-family: 'Caveat', cursive;
+
+
+
         color: white;
-         font-family: 'Source Sans Pro', sans-serif;
           font-size: 28px;
            font-weight: 400;
             line-height: 32px;
@@ -23,12 +28,16 @@
 
     }
     .fontso{
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Caveat', cursive;
+        font-size: 18px;
         color: #4d4343;
-        font-weight: bold;
+        
+        background-color: white;
+        font-weight: bolder;
     }
     th{
         // background: rgb(0,108,255);
-        background: rgb(122, 138, 163);
+
+        
     }
 }

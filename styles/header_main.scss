@@ -3,6 +3,7 @@
 
   @import url(https://fonts.googleapis.com/css?family=Patua+One);
   @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
   // vars
   $headings: 'Patua One', cursive;
@@ -206,38 +207,43 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    text-shadow: 7px -32px 10px rgba(111, 149, 188, 0.69);
     border-radius: 5px;
-    color: #000000;
-    font-family: 'Trocchi', serif;
-    font-size: 45px;
-    font-weight: normal;
+    
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
     line-height: 48px;
     margin-top: 0px;
     margin-bottom: 10px;
     // margin: 60px 0px;
-    color: #B5FFD9;
+    color: #cdf3f2;
+    font-weight: bolder;
+    background-color: #f5b2b291;
+
+
     
   }
   .styling3{
     margin-top: 60px;
   }
   .styling2 {
-    border: 1px solid burlywood;
+    border: 1px solid ;
     padding: 15px;
     border-radius: 5px;
-    // background-image: url('https://cdn.pixabay.com/photo/2017/03/14/16/57/silver-2143730_960_720.jpg');
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  text-shadow: 7px -32px 10px rgba(111, 149, 188, 0.69);
-    color: #B5FFD9;
-    font-weight: bolder;
+
+    color: #cdf3f2;
     font-family: 'Trocchi', serif;
     text-align: justify;
     font-size: 21px;
     font-weight: 400;
     line-height: 32px;
+    background-color: #f5b2b291;
+    border-color: #f5b2b291;
+    font-weight: bold;
+
+
     
     margin: 30px -320px;
     width: 1200px;

@@ -50,7 +50,7 @@ function Main() {
         <section className="content">
           <h1 className="styling ">Our Vision</h1>
           <p className="styling2 ">
-            believing in the effects of relaxing and taking a vacation, 
+            Believing in the effects of relaxing and taking a vacation, 
             and wanting to give back to society by publishing farms all around jordan, 
             we aim to achieve sustainable growth to add more places, we have
             established a vision with clear goals:

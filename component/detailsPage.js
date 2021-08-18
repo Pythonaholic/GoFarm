@@ -298,7 +298,7 @@ function DetailsPage() {
                                                     </Else>
                                                 </If>
 
-                                                <p class="attribution">by {commentAuth[i]}</p>
+                                                <p class="attribution">By {commentAuth[i]}</p>
                                             </div>
                                         </article>
                                     )
@@ -309,7 +309,8 @@ function DetailsPage() {
                             </section>
                         </Then>
                         <Else>
-                            <div></div>
+
+        
                         </Else>
 
                     </If>
