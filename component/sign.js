@@ -97,8 +97,8 @@ function SignupOrIn() {
         </aside>
         <section>
             <h1>
-                <a id="link-signup" className="active">Sign Up</a>
-                <a id="link-login">Log In</a>
+                <a id="link-signup" className="active">SignUp</a>
+                <a id="link-login">LogIn</a>
             </h1>
             <form id="form-signup" className="active" onSubmit = {signUpHandler}>
                 <div>

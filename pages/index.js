@@ -9,6 +9,7 @@ import Main from '../component/main';
 import Nav from '../component/nav';
 import Main_component from '../component/main-comp';
 import Header from '../component/header';
+import Homecards from '../component/homecards';
 
 export default function Home() {
   const context = useContext(SettingsContext); //4
@@ -22,6 +23,7 @@ export default function Home() {
 
       <Nav />
       <Main />
+      <Homecards/>
       <Footer />
      </div>
   )

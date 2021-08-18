@@ -26,6 +26,14 @@ function Form() {
     }
     console.log(data)
     farmsListContext.addFarm(data)
+
+
+    setTimeout(() => {
+
+      window.location.href = `/myfarm`;
+
+  }, 1500);
+    
     
   }
 
@@ -116,14 +124,16 @@ function Form() {
         </select>
         </div>
         <label>Adds</label>
-        <input type="checkbox" className='w-8 h-8 text-indigo-600 border border-indigo-600 form-checkbox' id="development" name="BBQ" /><label className="light" htmlFor="development">BBQ</label><br />
+        <input type="checkbox" className='w-8 h-8 text-indigo-600 border border-indigo-600 form-checkbox' id="development" name="BBQ" /><label className="light" htmlFor="development">Barbecue grill</label><br />
         <input type="checkbox" className='w-8 h-8 text-green-500 border border-green-500 form-checkbox' id="design"  name="pool" /><label className="light" htmlFor="design">Pool</label><br />
         <input type="checkbox" className='w-8 h-8 text-pink-600 border border-pink-600 form-checkbox' id="business"  name="AC" /><label className="light" htmlFor="business">Air Conditioning</label>
             </div>
             
 
             <div className="action">
-              <button className="action-button">Add the Farm</button>
+
+            <button mattooltip="Return to top" className="action-button">Add the Farm</button>
+              
             </div>
           </form>
           <div className="card-info">

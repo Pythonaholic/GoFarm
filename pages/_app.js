@@ -17,6 +17,10 @@ import '../styles/video_main.scss';
 import '../styles/headerbar.scss';
 import '../styles/about.scss';
 import '../styles/nav.scss';
+import '../styles/homecard.scss';
+
+
+
 
 
 
